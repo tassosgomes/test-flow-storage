@@ -119,6 +119,18 @@ O resultado geral é aprovado somente com zero `FAIL` e zero `BLOCKED`. Mantenha
 detalhe somente falhas, bloqueios e limitações materiais. Gere PDF apenas quando solicitado e quando
 a capacidade correspondente estiver disponível.
 
+### Publicar
+
+Se `TFS_API_KEY` estiver definida, publique a pasta depois de gravar o relatório. Não grave a chave
+nem segredos nos artefatos.
+
+```bash
+tfs push qa-evidence --project <slug>
+```
+
+O comando envia a rodada corrente e cada `archive-*` imediato. `TFS_API_URL` aponta para o portal;
+o padrão é `http://localhost:3000`.
+
 ## Invariantes
 
 - Não derive expectativas do código ou dos testes existentes.

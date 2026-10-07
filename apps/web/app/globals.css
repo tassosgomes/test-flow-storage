@@ -1,0 +1,233 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f3efe6;
+  --ink: #1c1914;
+  --muted: #6d655b;
+  --line: #d8d0c3;
+  --panel: #fffdf8;
+  --accent: #0e6b52;
+  --fail: #9a3412;
+  --soft: #e7e0d4;
+}
+
+* { box-sizing: border-box; }
+
+html, body { min-height: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans), "Source Sans 3", sans-serif;
+}
+
+a { color: inherit; }
+
+button, input { font: inherit; }
+
+.shell { min-height: 100vh; }
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0.85rem 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 560;
+  text-decoration: none;
+  letter-spacing: -0.03em;
+}
+
+.crumb {
+  color: var(--muted);
+  font-family: var(--font-mono), monospace;
+  font-size: 0.82rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.topbar .spacer { margin-left: auto; }
+
+.topbar .who { color: var(--muted); font-size: 0.92rem; }
+
+.topbar a.nav, .topbar button.linkish {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--ink);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.page { padding: 1.5rem; max-width: 1100px; }
+
+.page.wide { max-width: 1200px; }
+
+h1 {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 520;
+  font-size: 1.8rem;
+  letter-spacing: -0.03em;
+  margin: 0 0 1rem;
+}
+
+.auth-card {
+  max-width: 28rem;
+  margin: 8vh auto;
+  padding: 0 1.5rem;
+}
+
+.field { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 0.9rem; }
+
+.field span, .label { color: var(--muted); font-size: 0.92rem; }
+
+input[type="email"], input[type="password"], input[type="text"] {
+  width: 100%;
+  background: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 0.55rem 0.7rem;
+}
+
+button.primary, a.primary {
+  background: var(--ink);
+  color: var(--paper);
+  border: 0;
+  border-radius: 2px;
+  padding: 0.5rem 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button.ghost {
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+}
+
+.muted { color: var(--muted); }
+
+.error { color: var(--fail); }
+
+.split { display: grid; grid-template-columns: 1fr 18rem; gap: 1.5rem; align-items: start; }
+
+.card, .panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 0.9rem 1rem;
+}
+
+.project-link {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  text-decoration: none;
+  margin-bottom: 0.7rem;
+}
+
+.project-link strong { font-weight: 600; }
+
+.round {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.2rem 1.5rem;
+  padding: 0.95rem 0;
+  border-top: 1px solid var(--line);
+  text-decoration: none;
+}
+
+.round .id { font-family: var(--font-mono), monospace; font-size: 0.92rem; }
+
+.round .when, .round .verdict { text-align: right; }
+
+.verdict.ok { color: var(--accent); font-weight: 650; }
+.verdict.wait { color: var(--muted); }
+.verdict.bad { color: var(--fail); font-weight: 650; }
+
+.session-head { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; }
+.session-head h1 { font-family: var(--font-mono), monospace; font-size: 1.05rem; font-weight: 500; }
+
+.env { margin: 0.3rem 0; }
+.env dt { display: inline; color: var(--muted); }
+.env dd { display: inline; margin: 0 1rem 0 0.4rem; font-family: var(--font-mono), monospace; font-size: 0.86rem; }
+
+.counts { display: flex; gap: 1.2rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.tabs { display: flex; gap: 0.4rem; margin: 1rem 0; }
+.tabs button {
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+}
+.tabs button[aria-selected="true"] {
+  border-color: var(--line);
+  background: var(--panel);
+}
+
+.work {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 22rem);
+  gap: 1rem;
+  align-items: start;
+}
+
+.markdown { background: var(--panel); border: 1px solid var(--line); padding: 1rem 1.1rem; overflow: auto; }
+.markdown h1, .markdown h2, .markdown h3 { font-family: var(--font-serif), Georgia, serif; }
+.markdown table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
+.markdown th, .markdown td { border-bottom: 1px solid var(--line); text-align: left; padding: 0.35rem 0.45rem; vertical-align: top; }
+.markdown code { font-family: var(--font-mono), monospace; font-size: 0.86em; }
+
+button.evidence {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--accent);
+  font-family: var(--font-mono), monospace;
+  font-size: 0.86em;
+  cursor: pointer;
+  text-align: left;
+}
+
+.viewer { background: var(--panel); border: 1px solid var(--line); padding: 0.8rem; position: sticky; top: 0.8rem; }
+.viewer img, .viewer video { width: 100%; height: auto; background: var(--soft); }
+.viewer pre { white-space: pre-wrap; word-break: break-word; font-family: var(--font-mono), monospace; font-size: 0.78rem; max-height: 70vh; overflow: auto; }
+
+.unit { margin: 0 0 1rem; }
+.unit h2 { font-size: 1rem; margin: 0 0 0.4rem; font-weight: 600; }
+.file-row { display: flex; gap: 0.7rem; width: 100%; background: none; border: 0; padding: 0.2rem 0; cursor: pointer; text-align: left; }
+.file-row .case { width: 5.5rem; color: var(--muted); font-family: var(--font-mono), monospace; font-size: 0.82rem; }
+.file-row.on { background: var(--soft); }
+
+.secret {
+  border: 1px solid var(--accent);
+  background: #e7f3ee;
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+}
+.secret code { font-family: var(--font-mono), monospace; display: block; margin: 0.4rem 0; word-break: break-all; }
+
+.keys { width: 100%; border-collapse: collapse; }
+.keys th { text-align: left; color: var(--muted); font-weight: 500; font-size: 0.9rem; }
+.keys td, .keys th { padding: 0.45rem 0.4rem; border-bottom: 1px solid var(--line); }
+
+.inline { display: flex; gap: 0.6rem; align-items: end; }
+.inline .field { flex: 1; }
+
+.spec-list { list-style: none; padding: 0; }
+.spec-list li { font-family: var(--font-mono), monospace; padding: 0.25rem 0; }
+
+@media (max-width: 800px) {
+  .split, .work { grid-template-columns: 1fr; }
+  .round { grid-template-columns: 1fr; }
+  .round .when, .round .verdict { text-align: left; }
+}

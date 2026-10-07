@@ -1,0 +1,21 @@
+{
+  "name": "@tfs/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "tfs": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "tfs": "node dist/index.js"
+  },
+  "dependencies": {
+    "@tfs/schema": "*",
+    "commander": "^14.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2"
+  }
+}

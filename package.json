@@ -1,0 +1,19 @@
+{
+  "name": "test-flow-storage",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "npm run build -w @tfs/schema && npm run build -w @tfs/cli",
+    "dev": "npm run dev -w @tfs/web",
+    "build": "npm run build -w @tfs/schema && npm run build -w @tfs/cli && npm run build -w @tfs/web",
+    "test": "vitest run",
+    "db:push": "npm run db:push -w @tfs/web",
+    "tfs": "npm run tfs -w @tfs/cli --"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  }
+}
