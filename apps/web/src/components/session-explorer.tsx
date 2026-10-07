@@ -22,7 +22,8 @@ type Tab = (typeof TABS)[number];
 function resolveEvidence(token: string, paths: string[]) {
   const clean = token
     .trim()
-    .replace(/^[`'"()]+|[`'"(),.:]+$/g, "")
+    .replace(/^[`'"()]+/, "")
+    .replace(/[`'"(),.:]+$/, "")
     .replace(/^\.\//, "");
   if (!clean || /\s/.test(clean)) return null;
   if (paths.includes(clean)) return clean;

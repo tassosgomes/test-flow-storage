@@ -15,7 +15,7 @@ export default defineConfig({
       DATABASE_URL: "postgres://tfs:tfs@127.0.0.1:5432/tfs_test",
       BETTER_AUTH_SECRET: "test-secret-test-secret-test-secret-ok",
       BETTER_AUTH_URL: "http://127.0.0.1:3000",
-      STORAGE_DIR: "/tmp/tfs-test-objects",
+      STORAGE_DIR: path.resolve(".data/test-objects"),
     },
   },
 });

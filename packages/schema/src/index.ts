@@ -116,15 +116,16 @@ export function slugify(name: string): string {
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
+    .replace(/^-+/, "")
+    .replace(/-+$/, "");
   return slug || "projeto";
 }
 
 export function titleFromMarkdown(markdown: string | null | undefined): string | null {
   if (!markdown) return null;
-  const match = markdown.match(/^#\s+(.+)$/m);
-  if (!match) return null;
-  return match[1]
+  const heading = markdown.split("\n").find((line) => line.startsWith("# "));
+  if (!heading) return null;
+  return heading.slice(2).trim()
     .replace(/^QA Report\s+[—–-]\s+/i, "")
     .replace(/^Relat[oó]rio de Testes QA\s+[—–-]\s+/i, "")
     .replace(/^Plano de QA\s+[—–-]\s+/i, "")

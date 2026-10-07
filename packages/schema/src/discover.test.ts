@@ -9,7 +9,7 @@ describe("discoverSessionRoots", () => {
   const roots = discoverSessionRoots(evidence);
 
   it("encontra a rodada corrente e os dois arquivos", () => {
-    expect(roots.map((root) => root.session.session.id).sort()).toEqual([
+    expect(roots.map((root) => root.session.session.id).sort((left, right) => left.localeCompare(right))).toEqual([
       "qa-cap001-conta-aluno-2026-10-07",
       "qa-cap002-acesso-interno-2026-10-07",
       "qa-cap030-trilha-auditoria-2026-10-07",

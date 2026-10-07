@@ -48,7 +48,7 @@ function listRelativeFiles(rootDir: string, excludeArchives: boolean): string[] 
   };
 
   walk(rootDir);
-  return files.sort();
+  return files.sort((left, right) => left.localeCompare(right));
 }
 
 export function discoverSessionRoots(dir: string): DiscoveredSession[] {

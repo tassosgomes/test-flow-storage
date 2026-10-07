@@ -129,7 +129,10 @@ it("recusa chave inválida e substitui o conjunto no segundo push", async () => 
 
   const db = getDb();
   const rows = await db.select().from(artifact);
-  expect(rows.map((row) => row.relativePath).sort()).toEqual(["c.txt", "qa_report.md"]);
+  expect(rows.map((row) => row.relativePath).sort((left, right) => left.localeCompare(right))).toEqual([
+    "c.txt",
+    "qa_report.md",
+  ]);
   const { qaSession } = await import("../db/schema");
   const rounds = await db.select().from(qaSession);
   expect(rounds).toHaveLength(1);
