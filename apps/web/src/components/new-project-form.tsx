@@ -20,12 +20,16 @@ export function NewProjectForm() {
   }
 
   return (
-    <form className="panel" onSubmit={onSubmit}>
-      <h2>Novo projeto</h2>
+    <form className="panel panel-pad" onSubmit={onSubmit}>
+      <div className="stack">
+        <h2 className="panel-title">Novo projeto</h2>
+        <p className="panel-caption">O slug nasce do nome e pode ser editado.</p>
+      </div>
       <label className="field">
         <span>Nome</span>
         <input
           name="name"
+          placeholder="Code for Coders"
           value={name}
           onChange={(event) => {
             const value = event.target.value;
@@ -39,6 +43,7 @@ export function NewProjectForm() {
         <span>Slug</span>
         <input
           name="slug"
+          placeholder="code-for-coders"
           value={slug}
           onChange={(event) => {
             setTouched(true);
@@ -47,9 +52,10 @@ export function NewProjectForm() {
           required
         />
       </label>
+      <p className="eyebrow-label">/projects/{slug || "slug"}</p>
       {error ? <p className="error">{error}</p> : null}
-      <button className="primary" type="submit">
-        Criar
+      <button className="btn btn-primary btn-block" type="submit">
+        Criar projeto
       </button>
     </form>
   );

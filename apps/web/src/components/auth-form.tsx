@@ -3,12 +3,15 @@
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
+import { AuthHero } from "./auth-hero";
+import { Logo } from "./logo";
 
 export function AuthForm({ mode }: { mode: "login" | "signup" }) {
   const router = useRouter();
   const [error, setError] = useState<string | null>(null);
   const [pending, setPending] = useState(false);
-  const title = mode === "login" ? "Entrar" : "Criar conta";
+  const isLogin = mode === "login";
+  const title = isLogin ? "Entrar" : "Criar conta";
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -17,13 +20,12 @@ export function AuthForm({ mode }: { mode: "login" | "signup" }) {
     const form = new FormData(event.currentTarget);
     const email = String(form.get("email") || "");
     const password = String(form.get("password") || "");
-    const result =
-      mode === "login"
-        ? await authClient.signIn.email({ email, password })
-        : await authClient.signUp.email({ email, password, name: email.split("@")[0] || "QA" });
+    const result = isLogin
+      ? await authClient.signIn.email({ email, password })
+      : await authClient.signUp.email({ email, password, name: email.split("@")[0] || "QA" });
     setPending(false);
     if (result.error) {
-      setError(mode === "login" ? "E-mail ou senha não conferem." : "Não foi possível criar a conta.");
+      setError(isLogin ? "E-mail ou senha não conferem." : "Não foi possível criar a conta.");
       return;
     }
     router.push("/projects");
@@ -31,32 +33,48 @@ export function AuthForm({ mode }: { mode: "login" | "signup" }) {
   }
 
   return (
-    <main className="auth-card">
-      <a className="brand" href="/login">
-        test-flow
-      </a>
-      <h1>{title}</h1>
-      <form onSubmit={onSubmit}>
-        <label className="field">
-          <span>E-mail</span>
-          <input name="email" type="email" autoComplete="email" required />
-        </label>
-        <label className="field">
-          <span>Senha</span>
-          <input name="password" type="password" autoComplete={mode === "login" ? "current-password" : "new-password"} required minLength={8} />
-        </label>
-        {error ? <p className="error">{error}</p> : null}
-        <button className="primary" type="submit" disabled={pending}>
-          {title}
-        </button>
-      </form>
-      <p className="muted">
-        {mode === "login" ? (
-          <a href="/signup">Ainda sem conta? Criar conta</a>
-        ) : (
-          <a href="/login">Já tem conta? Entrar</a>
-        )}
-      </p>
-    </main>
+    <div className="auth">
+      <section className="auth-form-panel">
+        <Logo href="/login" />
+        <div className="auth-body">
+          <div className="auth-heading">
+            <h1>{title}</h1>
+            <p className="auth-sub">
+              {isLogin
+                ? "Acesse os planos, relatórios e evidências que o agente publicou."
+                : "Crie seu acesso para publicar e consultar as rodadas do flow-qa."}
+            </p>
+          </div>
+          <form className="auth-form" onSubmit={onSubmit}>
+            <label className="field">
+              <span>E-mail</span>
+              <input name="email" type="email" autoComplete="email" placeholder="voce@exemplo.com" required />
+            </label>
+            <label className="field">
+              <span>Senha</span>
+              <input
+                name="password"
+                type="password"
+                autoComplete={isLogin ? "current-password" : "new-password"}
+                placeholder="••••••••"
+                required
+                minLength={8}
+              />
+            </label>
+            {isLogin ? null : <p className="field-hint">Mínimo de 8 caracteres.</p>}
+            {error ? <p className="error">{error}</p> : null}
+            <button className="btn btn-primary btn-block" type="submit" disabled={pending}>
+              {title}
+            </button>
+          </form>
+          <p className="auth-switch">
+            {isLogin ? "Ainda sem conta?" : "Já tem conta?"}
+            <a href={isLogin ? "/signup" : "/login"}>{isLogin ? "Criar conta" : "Entrar"}</a>
+          </p>
+        </div>
+        <p className="auth-footnote">Guarda e consulta. Não executa testes, não agenda, não gera casos.</p>
+      </section>
+      <AuthHero />
+    </div>
   );
 }
