@@ -1,0 +1,105 @@
+{
+  "session": {
+    "id": "qa-cap030-trilha-auditoria-2026-10-07",
+    "started_at": "2026-10-07T15:35:00-03:00",
+    "artifact_under_test": "tasks/archive/prd-trilha-auditoria (PRD v1.2 + TechSpec v1.1, CAP-030 fatia mínima, RF-01 a RF-05); contrato vigente contracts/audit/asyncapi.yaml v1.4.0",
+    "environment": {
+      "admin_spa": "https://c4c-admin.lab.tasso.dev.br/admin",
+      "student_spa": "https://c4c-student.lab.tasso.dev.br/student",
+      "audit_api": "https://c4c-audit.lab.tasso.dev.br",
+      "smtp_webui": "https://smtp.tasso.dev.br",
+      "kibana": "https://kibana.tasso.dev.br",
+      "postgres": "host 192.168.0.5, db code_for_coders_audit (owner code_for_coders_audit, runtime code_for_coders_audit_runtime), schema audit_access",
+      "rabbitmq": "host 192.168.0.5:15672, vhost code-for-coders, exchange audit.events, fila audit.acts, DLQ audit.acts.dlq",
+      "apps_host": "Coolify em 192.168.0.11 (ssh alias infra-server), containers healthy"
+    },
+    "credentials_ref": {
+      "admin_spa": "fornecidas pelo usuário na sessão (não gravadas aqui)",
+      "smtp_basic_auth": "SMTP4DEV_USERNAME / SMTP4DEV_PASSWORD (.env local)",
+      "postgres": "REMOTE_DB_PASSWORD (.env local)",
+      "rabbitmq_management": "REMOTE_RABBITMQ_PASSWORD (.env local), usuário code_for_coders",
+      "elasticsearch": "ELASTIC_USERNAME / ELASTIC_PASSWORD (.env local)"
+    },
+    "test_data": {
+      "email_pattern": "qa.cap030.<caso>@example.test (contas de staff criadas pela rodada; resíduo permanente autorizado)",
+      "synthetic_tenants": "T_A=11111111-1111-4111-8111-111111111111, T_B=22222222-2222-4222-8222-222222222222 (dedicados à rodada)",
+      "motivo_markers": "Marcadores únicos QA-CAP030-CTxx embutidos nos motivos, para sondagem de vazamento em log/telemetria",
+      "fato_ids": "ver u2-conformidade-idempotencia/manifest.json e u3-ilegivel-dlq/manifest.json"
+    },
+    "authorization": "Plano aprovado pelo usuário em 2026-10-07: execução completa, incluindo publicação sintética no broker do lab (ilegíveis purgadas da DLQ ao final), tentativas recusadas de mutação no banco audit, criação de 1 conta de staff de teste (resíduo permanente) e arquivamento da rodada anterior de qa-evidence/.",
+    "completed_at": "2026-10-07T19:10:00-03:00",
+    "result": {
+      "overall": "APPROVED",
+      "pass": 29,
+      "fail": 0,
+      "blocked": 0,
+      "not_executed": 0
+    }
+  },
+  "units": [
+    {
+      "id": "U1",
+      "dir": "u1-e2e-produtor-real",
+      "cases": [
+        "CT-01",
+        "CT-02",
+        "CT-03",
+        "CT-04",
+        "CT-05"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "U2",
+      "dir": "u2-conformidade-idempotencia",
+      "cases": [
+        "CT-06",
+        "CT-07",
+        "CT-08",
+        "CT-09",
+        "CT-10",
+        "CT-11",
+        "CT-12",
+        "CT-13",
+        "CT-14",
+        "CT-15",
+        "CT-16"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "U3",
+      "dir": "u3-ilegivel-dlq",
+      "cases": [
+        "CT-17",
+        "CT-18",
+        "CT-19",
+        "CT-20",
+        "CT-21"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "U4",
+      "dir": "u4-imutabilidade",
+      "cases": [
+        "CT-22",
+        "CT-23",
+        "CT-24",
+        "CT-25",
+        "CT-26",
+        "CT-27"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "U5",
+      "dir": "u5-telemetria",
+      "cases": [
+        "CT-28",
+        "CT-29"
+      ],
+      "status": "PASS"
+    }
+  ]
+}

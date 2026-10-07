@@ -1,0 +1,1 @@
+00000000-0000-7000-8000-000000000001|identidade|01a117ac-823c-7db0-a17b-1d27e6717a8b|papel-revogado|conta-interna|01a0de9c-8aae-7ebf-b8ff-e8c460321040|conta-interna|01a117aa-0c5b-776a-be6b-bcf5337acd45|{"papel": "financeiro"}|Fim da tarefa de fechamento de mês — marcador QA-CAP030-CT04|2026-10-07 15:42:23.932583-03|2026-10-07 15:42:24.671623-03|conforming|{}

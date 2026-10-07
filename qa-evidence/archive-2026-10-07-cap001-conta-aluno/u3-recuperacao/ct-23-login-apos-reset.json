@@ -1,0 +1,1 @@
+{"type":"https://tools.ietf.org/html/rfc4918#section-11.2","title":"Confirm the account email before signing in.","status":422,"code":"EMAIL_NOT_CONFIRMED","traceId":"edb4675c769df7c5c2fdf7238cf24dac"}

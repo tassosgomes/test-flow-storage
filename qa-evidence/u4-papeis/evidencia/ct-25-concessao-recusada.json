@@ -1,0 +1,10 @@
+{
+  "status": 403,
+  "body": {
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.4",
+    "title": "The current staff session cannot manage access.",
+    "status": 403,
+    "code": "PERMISSION_DENIED",
+    "traceId": "e9000dc109efc7339cb35b79d20c6515"
+  }
+}

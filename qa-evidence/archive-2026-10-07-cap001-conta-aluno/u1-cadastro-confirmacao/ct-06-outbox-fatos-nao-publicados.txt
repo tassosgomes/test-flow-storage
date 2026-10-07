@@ -1,0 +1,9 @@
+StudentAccountConfirmedV1|rk=identidade.conta-confirmada.v1|exchange=identity.events|attempts=10|err=RabbitMQ rejected the outbox message.|occurred=2026-10-07 10:41:28.073128-03
+StudentAccountCreatedV1|rk=identidade.conta-criada.v1|exchange=identity.events|attempts=10|err=RabbitMQ rejected the outbox message.|occurred=2026-10-07 10:37:34.393666-03
+StudentPasswordResetV1|rk=identidade.senha-redefinida.v1|exchange=identity.events|attempts=10|err=RabbitMQ rejected the outbox message.|occurred=2026-10-06 17:39:28.02837-03
+StudentAccountConfirmedV1|rk=identidade.conta-confirmada.v1|exchange=identity.events|attempts=10|err=RabbitMQ rejected the outbox message.|occurred=2026-10-02 16:53:01.188773-03
+StudentAccountCreatedV1|rk=identidade.conta-criada.v1|exchange=identity.events|attempts=10|err=RabbitMQ rejected the outbox message.|occurred=2026-10-02 16:52:38.917448-03
+StudentPasswordResetV1|rk=identidade.senha-redefinida.v1|exchange=identity.events|attempts=10|err=RabbitMQ rejected the outbox message.|occurred=2026-09-28 15:33:54.666574-03
+StudentAccountConfirmedV1|rk=identidade.conta-confirmada.v1|exchange=identity.events|attempts=10|err=RabbitMQ rejected the outbox message.|occurred=2026-09-28 15:32:54.443332-03
+StudentAccountCreatedV1|rk=identidade.conta-criada.v1|exchange=identity.events|attempts=10|err=RabbitMQ rejected the outbox message.|occurred=2026-09-28 15:32:42.975745-03
+

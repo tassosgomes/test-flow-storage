@@ -1,0 +1,6 @@
+== CT-25: UPDATE com dona ==
+ERROR:  Audit records are append-only; UPDATE and DELETE are forbidden.
+CONTEXT:  PL/pgSQL function audit_access.prevent_audit_record_mutation() line 3 at RAISE
+== CT-25: DELETE com dona ==
+ERROR:  Audit records are append-only; UPDATE and DELETE are forbidden.
+CONTEXT:  PL/pgSQL function audit_access.prevent_audit_record_mutation() line 3 at RAISE

@@ -1,0 +1,11 @@
+{
+  "text": "Revogar papel\n\nQa Cap002 Professor · qa.cap002.professor@example.test\n\nA pessoa será desconectada agora.\n\nPapel para Qa Cap002 Professor\nprofessor\nsuporte\nMotivo para Qa Cap002 Professor\n\nFica registrado na auditoria. Não cite dados pessoais de outras pessoas.\n0/500\n\nRevogar papel",
+  "html": "<button aria-label=\"Fechar\" class=\"dialog-close\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-x\" aria-hidden=\"true\"><path d=\"M18 6 6 18\"></path><path d=\"m6 6 12 12\"></path></svg></button><h2 id=\"dialog-title\">Revogar papel</h2><p>Qa Cap002 Professor · qa.cap002.professor@example.test</p><p class=\"warning-alert\">A pessoa será desconectada agora.</p><form novalidate=\"\"><label for=\"staff-role-01a117f4-20a7-761f-86b5-2ad51c4f99fe\">Papel para Qa Cap002 Professor</label><select id=\"staff-role-01a117f4-20a7-761f-86b5-2ad51c4f99fe\" name=\"role\"><option value=\"professor\">professor</option><option value=\"suporte\">suporte</option></select><label for=\"staff-reason-01a117f4-20a7-761f-86b5-2ad51c4f99fe\">Motivo para Qa Cap002 Professor</label><textarea id=\"staff-reason-01a117f4-20a7-761f-86b5-2ad51c4f99fe\" maxlength=\"500\" rows=\"2\" name=\"reason\" aria-invalid=\"false\"></textarea><p class=\"field-hint\">Fica registrado na auditoria. Não cite dados pessoais de outras pessoas. <span>0/500</span></p><div class=\"dialog-actions\"><button class=\"primary-button\" type=\"button\">Revogar papel</button></div></form>",
+  "combos": [
+    "<select id=\"staff-role-01a117f4-20a7-761f-86b5-2ad51c4f99fe\" name=\"role\"><option value=\"professor\">professor</option><option value=\"suporte\">suporte</option></select>"
+  ],
+  "buttons": [
+    "",
+    "Revogar papel"
+  ]
+}

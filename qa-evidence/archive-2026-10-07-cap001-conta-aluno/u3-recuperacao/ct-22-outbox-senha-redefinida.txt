@@ -1,0 +1,2 @@
+StudentPasswordResetV1|attempts=10|err=RabbitMQ rejected the outbox message.
+

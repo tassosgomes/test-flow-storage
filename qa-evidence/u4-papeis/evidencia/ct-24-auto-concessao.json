@@ -1,0 +1,10 @@
+{
+  "status": 422,
+  "body": {
+    "type": "https://tools.ietf.org/html/rfc4918#section-11.2",
+    "title": "Você não pode alterar os próprios papéis.",
+    "status": 422,
+    "code": "SELF_ROLE_CHANGE_FORBIDDEN",
+    "traceId": "9ba82f4fc4a8d6d5da4b606000564d54"
+  }
+}

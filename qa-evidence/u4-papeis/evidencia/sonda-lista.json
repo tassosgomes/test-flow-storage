@@ -1,0 +1,5 @@
+{
+  "status": 200,
+  "len": 1857,
+  "sample": "{\"data\":[{\"accountId\":\"01a0de9c-8aae-7ebf-b8ff-e8c460321040\",\"name\":\"Backoffice administrator\",\"email\":\"admin@example.com\",\"roles\":[\"administrador\"],\"isSelf\":true},{\"accountId\":\"01a0debd-93ba-7fa1-ba6d-b9a871137320\",\"name\":\"Codex Smoke Support\",\"email\":\"codex-smoke-support-20260926-1721@example.invalid\",\"roles\":[\"suporte\"],\"isSelf\":false},{\"accountId\":\"01a0debd-3f14-7c8b-9c82-de7e34685040\",\"name\":\"Codex Smoke Teacher\",\"email\":\"codex-smoke-prof-20260926-1721@example.invalid\",\"roles\":[\"professor\"],\"isSelf\":false},{\"accountId\":\"01a0fe2c-5abe-7bf4-80d0-e4256a9e4d98\",\"name\":\"Financeiro\",\"email\":\"financeiro@example.com\",\"roles\":[\"financeiro\"],\"isSelf\":false},{\"accountId\":\"01a102ac-49ee-770a-9082-ff2d9bfc2f0e\",\"name\":\"Lesson Smoke Finance\",\"email\":\"lesson-01a102ac49ee70ac9e33198bf8676f4b@staff.te"
+}

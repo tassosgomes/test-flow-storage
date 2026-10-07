@@ -1,0 +1,1 @@
+00000000-0000-7000-8000-000000000001|identidade|01a117ab-b7ef-7dbb-a695-8cd6c8e3de95|papel-concedido|conta-interna|01a0de9c-8aae-7ebf-b8ff-e8c460321040|conta-interna|01a117aa-0c5b-776a-be6b-bcf5337acd45|{"papel": "financeiro"}|Acesso financeiro para fechamento de mês — marcador QA-CAP030-CT03|2026-10-07 15:41:32.143645-03|2026-10-07 15:41:32.88284-03|conforming|{}

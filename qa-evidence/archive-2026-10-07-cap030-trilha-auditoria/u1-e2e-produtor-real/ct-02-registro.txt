@@ -1,0 +1,1 @@
+00000000-0000-7000-8000-000000000001|identidade|01a117aa-0c5b-7acb-8d8c-70f5b7ffcaff|convite-interno-aceito|conta-interna|01a117aa-0c5b-776a-be6b-bcf5337acd45|convite-interno|01a117a8-c182-75b4-a56a-8b553dc38235|||2026-10-07 15:39:42.683368-03|2026-10-07 15:39:43.806303-03|conforming|{}

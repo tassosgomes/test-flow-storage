@@ -1,0 +1,16 @@
+{
+  "status": 200,
+  "body": {
+    "member": {
+      "accountId": "01a117f9-ee4a-7dd9-ad7b-d5c1ddd19171",
+      "name": "Qa Cap002 Financeiro",
+      "email": "qa.cap002.financeiro@example.test",
+      "roles": [
+        "suporte"
+      ],
+      "isSelf": false
+    },
+    "changed": true,
+    "sessionsEnded": true
+  }
+}

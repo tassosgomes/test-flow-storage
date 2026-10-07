@@ -1,0 +1,1 @@
+{"type":"https://tools.ietf.org/html/rfc4918#section-11.2","title":"An active account already uses this email address.","status":422,"code":"ACCOUNT_ALREADY_EXISTS","traceId":"c2010d7c80767e5135130212bd21408a"}

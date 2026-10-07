@@ -1,0 +1,2 @@
+psql: error: connection to server at "192.168.0.5", port 5432 failed: FATAL:  permission denied for database "code_for_coders_audit"
+DETAIL:  User does not have CONNECT privilege.

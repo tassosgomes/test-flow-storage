@@ -1,0 +1,17 @@
+== e9090064 ==
+9 | Administrative act recorded e9090064-27b2-4bf5-8da3-51bf8c282d4f identidade papel-concedido 11111111-1111-4111-8111-111111111111
+13 | Administrative act redelivery has different content identidade e9090064-27b2-4bf5-8da3-51bf8c282d4f a4a8e32594867cab19fba93bea87394bb583a8297ca06a7d9083874edf7fe643 0dd86cd05257f1179a4bedb428745efe00f10160d98b6ebf07e5fa0d223be8f1
+9 | Administrative act recorded e9090064-27b2-4bf5-8da3-51bf8c282d4f identidade papel-concedido 11111111-1111-4111-8111-111111111111
+== 5fa9d407 ==
+13 | Non-conforming administrative act recorded 5fa9d407-88f0-4e88-8477-fae2a379b890 identidade papel-revogado motivo-ausente
+9 | Administrative act recorded 5fa9d407-88f0-4e88-8477-fae2a379b890 identidade papel-revogado 11111111-1111-4111-8111-111111111111
+9 | Administrative act recorded 5fa9d407-88f0-4e88-8477-fae2a379b890 identidade papel-revogado 11111111-1111-4111-8111-111111111111
+== 8c74f8c7 ==
+13 | Non-conforming administrative act recorded 8c74f8c7-0a7d-4840-bc32-6f59a8e30cb7 identidade papel-concedido autor-ausente,alvo-ausente
+9 | Administrative act recorded 8c74f8c7-0a7d-4840-bc32-6f59a8e30cb7 identidade papel-concedido 11111111-1111-4111-8111-111111111111
+== d223f879 ==
+13 | Non-conforming administrative act recorded d223f879-3ec6-4d8b-956d-3b3ec1a86adc identidade papel-alterado tipo-desconhecido
+9 | Administrative act recorded d223f879-3ec6-4d8b-956d-3b3ec1a86adc identidade papel-alterado 11111111-1111-4111-8111-111111111111
+== 69dbec4b ==
+13 | Non-conforming administrative act recorded 69dbec4b-e231-431d-89bb-24f1badb7c92 identidade papel-concedido momento-ausente
+9 | Administrative act recorded 69dbec4b-e231-431d-89bb-24f1badb7c92 identidade papel-concedido 11111111-1111-4111-8111-111111111111

@@ -1,0 +1,1024 @@
+{"version":8,"type":"context-options","origin":"library","browserName":"chromium","playwrightVersion":"1.62.1","options":{"noDefaultViewport":false,"viewport":{"width":1280,"height":720},"ignoreHTTPSErrors":false,"javaScriptEnabled":true,"bypassCSP":false,"locale":"en-US","offline":false,"isMobile":false,"hasTouch":false,"colorScheme":"light","acceptDownloads":"accept","baseURL":"https://c4c-admin.lab.tasso.dev.br","serviceWorkers":"allow","selectorEngines":[],"testIdAttributeName":"data-testid"},"platform":"linux","wallTime":1791404263118,"monotonicTime":1562.716,"sdkLanguage":"javascript","testIdAttributeName":"data-testid","contextId":"browser-context@3bfd7f3dfa242c78d82ed53154ad0dbd","title":"01-u4-gestao.spec.ts:180 › CT-22b concessao a F1 com motivo vale na lista"}
+{"type":"before","callId":"call@6","startTime":1569.153,"class":"BrowserContext","method":"newPage","params":{},"stepId":"pw:api@38"}
+{"type":"event","time":1727.535,"class":"BrowserContext","method":"page","params":{"pageId":"page@d9e37122c854193f7003c6c44bf8096c"}}
+{"type":"after","callId":"call@6","endTime":1727.69,"result":{"page":"<Page>"}}
+{"type":"before","callId":"call@8","startTime":1740.276,"class":"Frame","method":"goto","params":{"url":"/admin/entrar","waitUntil":"load"},"stepId":"pw:api@39","pageId":"page@d9e37122c854193f7003c6c44bf8096c","beforeSnapshot":"before@call@8"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@8","snapshotName":"before@call@8","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"about:blank","html":["HTML",{},["HEAD",{},["BASE",{"href":"about:blank"}]],["BODY"]],"viewport":{"width":1280,"height":720},"timestamp":1745.969,"wallTime":1791404263300,"collectionTime":1.5,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@8","time":1749.04,"message":"navigating to \"https://c4c-admin.lab.tasso.dev.br/admin/entrar\", waiting until \"load\""}
+{"type":"screencast-frame","pageId":"page@d9e37122c854193f7003c6c44bf8096c","sha1":"page@d9e37122c854193f7003c6c44bf8096c-1791404263328.jpeg","width":1280,"height":720,"timestamp":1772.528,"frameSwapWallTime":1791404263320.181}
+{"type":"after","callId":"call@8","endTime":2392.514,"result":{"response":"<Response>"},"afterSnapshot":"after@call@8"}
+{"type":"screencast-frame","pageId":"page@d9e37122c854193f7003c6c44bf8096c","sha1":"page@d9e37122c854193f7003c6c44bf8096c-1791404263978.jpeg","width":1280,"height":720,"timestamp":2422.145,"frameSwapWallTime":1791404263974.008}
+{"type":"frame-snapshot","snapshot":{"callId":"call@8","snapshotName":"after@call@8","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/entrar","doctype":"html","html":["HTML",{"lang":"en"},["HEAD",{},["BASE",{"href":"https://c4c-admin.lab.tasso.dev.br/admin/entrar"}],"\n    ",["META",{"charset":"utf-8"}],"\n    ",["META",{"name":"viewport","content":"width=device-width, initial-scale=1.0"}],"\n    ",["META",{"name":"description","content":"Admin workspace for platform operations."}],"\n    ",["TITLE",{},"Admin Workspace"],"\n    ","\n    ","\n    ",["LINK",{"rel":"stylesheet","crossorigin":"","href":"/admin/assets/index-tgMYCrRI.css"}],"\n  "],"\n  ",["BODY",{},"\n    ",["DIV",{"id":"root"},["MAIN",{"class":"auth-layout"},["DIV",{"class":"auth-form-side"},["DIV",{"class":"backoffice-brand"},["SPAN",{"class":"brand-mark"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-code-xml lucide-code-2","aria-hidden":"true"},["path",{"d":"m18 16 4-4-4-4"}],["path",{"d":"m6 8-4 4 4 4"}],["path",{"d":"m14.5 4-5 16"}]]],["SPAN",{},"Code4Coders"],["SPAN",{"class":"brand-badge"},"Backoffice"]],["DIV",{"class":"auth-content"},["SECTION",{"aria-labelledby":"staff-login-title","class":"password-reset-card"},["P",{"class":"eyebrow"},"Backoffice"],["H1",{"id":"staff-login-title"},"Entrar na operação"],["P",{},"Acesso da equipe da escola. Alunos entram por code4coders.com.br/entrar."],["FORM",{"novalidate":""},["LABEL",{"for":"email"},"E-mail"],["INPUT",{"__playwright_value_":"","autocomplete":"username","id":"email","aria-invalid":"false","type":"email","name":"email"}],["DIV",{"class":"field-heading"},["LABEL",{"for":"password"},"Senha"],["A",{"href":"/admin/recuperar-senha","data-discover":"true"},"Esqueceu a senha?"]],["DIV",{"class":"password-input"},["INPUT",{"__playwright_value_":"","autocomplete":"current-password","id":"password","aria-invalid":"false","type":"password","name":"password"}],["BUTTON",{"aria-label":"Mostrar senha","class":"visibility-button","type":"button"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"16","height":"16","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-eye","aria-hidden":"true"},["path",{"d":"M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"}],["circle",{"cx":"12","cy":"12","r":"3"}]]]],["BUTTON",{"type":"submit"},"Entrar"]],["P",{"class":"auth-footnote"},"Sem conta? O acesso é por convite de um administrador."]]],["SMALL",{"class":"auth-copyright"},"© ","2026"," Code4Coders · Área restrita à equipe"]],["ASIDE",{"aria-hidden":"true","class":"auth-panel"},["DIV",{"class":"auth-panel-content"},["DIV",{"class":"code-window"},["DIV",{"class":"code-title"},["SPAN",{"class":"window-dots"},["I"],["I"],["I"]],"acesso.ts ",["SPAN",{},"TS"]],["PRE",{},["SPAN",{},"1  // acesso.ts"],"\n","2  if (!voce.pode(",["EM",{},"\"financeiro.ler\""],"))","\n",["SPAN",{},"3    return negar();  // 403"],"\n","4","\n","5  abrir(area);  ",["STRONG",{},"// ✓ permitido"]]],["H2",{},"Operação da escola, com ",["SPAN",{},"acesso por papel."]],["P",{},"Área restrita à equipe. Cada pessoa vê só o que é dela."]]]]],"\n  \n\n"]],"viewport":{"width":1280,"height":720},"timestamp":2458.232,"wallTime":1791404263086,"collectionTime":43,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"before","callId":"call@10","startTime":2466.206,"class":"Frame","method":"fill","params":{"selector":"internal:role=textbox[name=\"E-mail\"i]","strict":true,"value":"admin@example.com"},"stepId":"pw:api@40","pageId":"page@d9e37122c854193f7003c6c44bf8096c","beforeSnapshot":"before@call@10"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@10","snapshotName":"before@call@10","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/entrar","doctype":"html","html":[[1,98]],"viewport":{"width":1280,"height":720},"timestamp":2470.328,"wallTime":1791404263100,"collectionTime":0.6000000238418579,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@10","time":2471.736,"message":"waiting for getByRole('textbox', { name: 'E-mail' })"}
+{"type":"screencast-frame","pageId":"page@d9e37122c854193f7003c6c44bf8096c","sha1":"page@d9e37122c854193f7003c6c44bf8096c-1791404263125.jpeg","width":1280,"height":720,"timestamp":2494.513,"frameSwapWallTime":1791404263118.86}
+{"type":"console","messageType":"error","text":"Failed to load resource: the server responded with a status of 404 ()","args":[],"location":{"url":"https://c4c-admin.lab.tasso.dev.br/favicon.ico","lineNumber":0,"columnNumber":0},"time":2497.753,"pageId":"page@d9e37122c854193f7003c6c44bf8096c"}
+{"type":"log","callId":"call@10","time":2507.129,"message":"  locator resolved to <input id=\"email\" type=\"email\" name=\"email\" aria-invalid=\"false\" autocomplete=\"username\"/>"}
+{"type":"log","callId":"call@10","time":2511.905,"message":"  fill(\"admin@example.com\")"}
+{"type":"log","callId":"call@10","time":2511.957,"message":"attempting fill action"}
+{"type":"input","callId":"call@10","inputSnapshot":"input@call@10"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@10","snapshotName":"input@call@10","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/entrar","doctype":"html","html":["HTML",{"lang":"en"},[[2,15]],[[2,16]],["BODY",{},[[2,17]],["DIV",{"id":"root"},["MAIN",{"class":"auth-layout"},["DIV",{"class":"auth-form-side"},[[2,27]],["DIV",{"class":"auth-content"},["SECTION",{"aria-labelledby":"staff-login-title","class":"password-reset-card"},[[2,29]],[[2,31]],[[2,33]],["FORM",{"novalidate":""},[[2,35]],["INPUT",{"__playwright_value_":"","__playwright_target__":"","autocomplete":"username","id":"email","aria-invalid":"false","type":"email","name":"email"}],[[2,41]],[[2,47]],[[2,49]]],[[2,52]]]],[[2,58]]],[[2,93]]]],[[2,96]]]],"viewport":{"width":1280,"height":720},"timestamp":2514.533,"wallTime":1791404263144,"collectionTime":0.800000011920929,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@10","time":2515.386,"message":"  waiting for element to be visible, enabled and editable"}
+{"type":"screencast-frame","pageId":"page@d9e37122c854193f7003c6c44bf8096c","sha1":"page@d9e37122c854193f7003c6c44bf8096c-1791404263158.jpeg","width":1280,"height":720,"timestamp":2527.637,"frameSwapWallTime":1791404263151.1282}
+{"type":"after","callId":"call@10","endTime":2537.372,"afterSnapshot":"after@call@10"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@10","snapshotName":"after@call@10","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/entrar","doctype":"html","html":["HTML",{"lang":"en"},[[3,15]],[[3,16]],["BODY",{},[[3,17]],["DIV",{"id":"root"},["MAIN",{"class":"auth-layout"},["DIV",{"class":"auth-form-side"},[[3,27]],["DIV",{"class":"auth-content"},["SECTION",{"aria-labelledby":"staff-login-title","class":"password-reset-card"},[[3,29]],[[3,31]],[[3,33]],["FORM",{"novalidate":""},[[3,35]],["INPUT",{"__playwright_value_":"admin@example.com","__playwright_target__":"","autocomplete":"username","id":"email","aria-invalid":"false","type":"email","name":"email"}],[[3,41]],[[3,47]],[[3,49]]],[[3,52]]]],[[3,58]]],[[3,93]]]],[[3,96]]]],"viewport":{"width":1280,"height":720},"timestamp":2546.458,"wallTime":1791404263171,"collectionTime":0.800000011920929,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"before","callId":"call@12","startTime":2549.092,"class":"Frame","method":"fill","params":{"selector":"internal:role=textbox[name=\"Senha\"i]","strict":true,"value":"Abc@1234"},"stepId":"pw:api@41","pageId":"page@d9e37122c854193f7003c6c44bf8096c","beforeSnapshot":"before@call@12"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@12","snapshotName":"before@call@12","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/entrar","doctype":"html","html":["HTML",{"lang":"en"},[[4,15]],[[4,16]],["BODY",{},[[4,17]],["DIV",{"id":"root"},["MAIN",{"class":"auth-layout"},["DIV",{"class":"auth-form-side"},[[4,27]],["DIV",{"class":"auth-content"},["SECTION",{"aria-labelledby":"staff-login-title","class":"password-reset-card"},[[4,29]],[[4,31]],[[4,33]],["FORM",{"novalidate":""},[[4,35]],["INPUT",{"__playwright_value_":"admin@example.com","autocomplete":"username","id":"email","aria-invalid":"false","type":"email","name":"email"}],[[4,41]],[[4,47]],[[4,49]]],[[4,52]]]],[[4,58]]],[[4,93]]]],[[4,96]]]],"viewport":{"width":1280,"height":720},"timestamp":2551.297,"wallTime":1791404263181,"collectionTime":0.5999999940395355,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@12","time":2551.766,"message":"waiting for getByRole('textbox', { name: 'Senha' })"}
+{"type":"log","callId":"call@12","time":2557.329,"message":"  locator resolved to <input id=\"password\" type=\"password\" name=\"password\" aria-invalid=\"false\" autocomplete=\"current-password\"/>"}
+{"type":"log","callId":"call@12","time":2559.478,"message":"  fill(\"Abc@1234\")"}
+{"type":"log","callId":"call@12","time":2559.522,"message":"attempting fill action"}
+{"type":"input","callId":"call@12","inputSnapshot":"input@call@12"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@12","snapshotName":"input@call@12","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/entrar","doctype":"html","html":["HTML",{"lang":"en"},[[5,15]],[[5,16]],["BODY",{},[[5,17]],["DIV",{"id":"root"},["MAIN",{"class":"auth-layout"},["DIV",{"class":"auth-form-side"},[[5,27]],["DIV",{"class":"auth-content"},["SECTION",{"aria-labelledby":"staff-login-title","class":"password-reset-card"},[[5,29]],[[5,31]],[[5,33]],["FORM",{"novalidate":""},[[5,35]],[[1,0]],[[5,41]],["DIV",{"class":"password-input"},["INPUT",{"__playwright_value_":"","__playwright_target__":"","autocomplete":"current-password","id":"password","aria-invalid":"false","type":"password","name":"password"}],[[5,46]]],[[5,49]]],[[5,52]]]],[[5,58]]],[[5,93]]]],[[5,96]]]],"viewport":{"width":1280,"height":720},"timestamp":2561.656,"wallTime":1791404263191,"collectionTime":0.699999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@12","time":2562.038,"message":"  waiting for element to be visible, enabled and editable"}
+{"type":"screencast-frame","pageId":"page@d9e37122c854193f7003c6c44bf8096c","sha1":"page@d9e37122c854193f7003c6c44bf8096c-1791404263199.jpeg","width":1280,"height":720,"timestamp":2568.494,"frameSwapWallTime":1791404263192.618}
+{"type":"after","callId":"call@12","endTime":2569.963,"afterSnapshot":"after@call@12"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@12","snapshotName":"after@call@12","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/entrar","doctype":"html","html":["HTML",{"lang":"en"},[[6,15]],[[6,16]],["BODY",{},[[6,17]],["DIV",{"id":"root"},["MAIN",{"class":"auth-layout"},["DIV",{"class":"auth-form-side"},[[6,27]],["DIV",{"class":"auth-content"},["SECTION",{"aria-labelledby":"staff-login-title","class":"password-reset-card"},[[6,29]],[[6,31]],[[6,33]],["FORM",{"novalidate":""},[[6,35]],[[2,0]],[[6,41]],["DIV",{"class":"password-input"},["INPUT",{"__playwright_value_":"Abc@1234","__playwright_target__":"","autocomplete":"current-password","id":"password","aria-invalid":"false","type":"password","name":"password"}],[[6,46]]],[[6,49]]],[[6,52]]]],[[6,58]]],[[6,93]]]],[[6,96]]]],"viewport":{"width":1280,"height":720},"timestamp":2572.238,"wallTime":1791404263202,"collectionTime":0.5999999940395355,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"before","callId":"call@14","startTime":2574.512,"class":"Frame","method":"click","params":{"selector":"internal:role=button[name=\"Entrar\"i]","strict":true},"stepId":"pw:api@42","pageId":"page@d9e37122c854193f7003c6c44bf8096c","beforeSnapshot":"before@call@14"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@14","snapshotName":"before@call@14","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/entrar","doctype":"html","html":["HTML",{"lang":"en"},[[7,15]],[[7,16]],["BODY",{},[[7,17]],["DIV",{"id":"root"},["MAIN",{"class":"auth-layout"},["DIV",{"class":"auth-form-side"},[[7,27]],["DIV",{"class":"auth-content"},["SECTION",{"aria-labelledby":"staff-login-title","class":"password-reset-card"},[[7,29]],[[7,31]],[[7,33]],["FORM",{"novalidate":""},[[7,35]],[[3,0]],[[7,41]],["DIV",{"class":"password-input"},["INPUT",{"__playwright_value_":"Abc@1234","autocomplete":"current-password","id":"password","aria-invalid":"false","type":"password","name":"password"}],[[7,46]]],[[7,49]]],[[7,52]]]],[[7,58]]],[[7,93]]]],[[7,96]]]],"viewport":{"width":1280,"height":720},"timestamp":2576.975,"wallTime":1791404263206,"collectionTime":0.5,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@14","time":2577.549,"message":"waiting for getByRole('button', { name: 'Entrar' })"}
+{"type":"screencast-frame","pageId":"page@d9e37122c854193f7003c6c44bf8096c","sha1":"page@d9e37122c854193f7003c6c44bf8096c-1791404263213.jpeg","width":1280,"height":720,"timestamp":2582.287,"frameSwapWallTime":1791404263208.036}
+{"type":"log","callId":"call@14","time":2584.617,"message":"  locator resolved to <button type=\"submit\">Entrar</button>"}
+{"type":"log","callId":"call@14","time":2586.79,"message":"attempting click action"}
+{"type":"log","callId":"call@14","time":2587.386,"message":"  waiting for element to be visible, enabled and stable"}
+{"type":"screencast-frame","pageId":"page@d9e37122c854193f7003c6c44bf8096c","sha1":"page@d9e37122c854193f7003c6c44bf8096c-1791404263229.jpeg","width":1280,"height":720,"timestamp":2598.98,"frameSwapWallTime":1791404263224.4512}
+{"type":"log","callId":"call@14","time":2609.864,"message":"  element is visible, enabled and stable"}
+{"type":"log","callId":"call@14","time":2609.891,"message":"  scrolling into view if needed"}
+{"type":"log","callId":"call@14","time":2611.341,"message":"  done scrolling"}
+{"type":"screencast-frame","pageId":"page@d9e37122c854193f7003c6c44bf8096c","sha1":"page@d9e37122c854193f7003c6c44bf8096c-1791404263243.jpeg","width":1280,"height":720,"timestamp":2612.418,"frameSwapWallTime":1791404263238.2751}
+{"type":"input","callId":"call@14","point":{"x":320,"y":487},"inputSnapshot":"input@call@14"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@14","snapshotName":"input@call@14","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/entrar","doctype":"html","html":["HTML",{"lang":"en"},[[8,15]],[[8,16]],["BODY",{},[[8,17]],["DIV",{"id":"root"},["MAIN",{"class":"auth-layout"},["DIV",{"class":"auth-form-side"},[[8,27]],["DIV",{"class":"auth-content"},["SECTION",{"aria-labelledby":"staff-login-title","class":"password-reset-card"},[[8,29]],[[8,31]],[[8,33]],["FORM",{"novalidate":""},[[8,35]],[[4,0]],[[8,41]],[[1,1]],["BUTTON",{"__playwright_target__":"","type":"submit"},[[8,48]]]],[[8,52]]]],[[8,58]]],[[8,93]]]],[[8,96]]]],"viewport":{"width":1280,"height":720},"timestamp":2615.72,"wallTime":1791404263245,"collectionTime":0.5999999940395355,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@14","time":2619.874,"message":"  performing click action"}
+{"type":"log","callId":"call@14","time":2643.02,"message":"  click action done"}
+{"type":"log","callId":"call@14","time":2643.047,"message":"  waiting for scheduled navigations to finish"}
+{"type":"log","callId":"call@14","time":2644.742,"message":"  navigations have finished"}
+{"type":"after","callId":"call@14","endTime":2645.01,"afterSnapshot":"after@call@14"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@14","snapshotName":"after@call@14","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/entrar","doctype":"html","html":["HTML",{"lang":"en"},[[9,15]],[[9,16]],["BODY",{},[[9,17]],["DIV",{"id":"root"},["MAIN",{"class":"auth-layout"},["DIV",{"class":"auth-form-side"},[[9,27]],["DIV",{"class":"auth-content"},["SECTION",{"aria-labelledby":"staff-login-title","class":"password-reset-card"},[[9,29]],[[9,31]],[[9,33]],["FORM",{"novalidate":""},[[9,35]],[[5,0]],[[9,41]],[[2,1]],["BUTTON",{"__playwright_target__":"","type":"submit","disabled":""},"Entrando…"]],[[9,52]]]],[[9,58]]],[[9,93]]]],[[9,96]]]],"viewport":{"width":1280,"height":720},"timestamp":2647.363,"wallTime":1791404263277,"collectionTime":0.5999999940395355,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"before","callId":"call@16","startTime":2653.719,"title":"Wait for navigation","class":"Page","method":"__waitInfo__","params":{"waitId":"10dcb46d80e98eef6d13bdd1ababe545","phase":"before","event":""},"stepId":"pw:api@43","pageId":"page@d9e37122c854193f7003c6c44bf8096c"}
+{"type":"log","callId":"call@16","time":2653.968,"message":"waiting for navigation until \"load\""}
+{"type":"screencast-frame","pageId":"page@d9e37122c854193f7003c6c44bf8096c","sha1":"page@d9e37122c854193f7003c6c44bf8096c-1791404263292.jpeg","width":1280,"height":720,"timestamp":2661.757,"frameSwapWallTime":1791404263285.437}
+{"type":"screencast-frame","pageId":"page@d9e37122c854193f7003c6c44bf8096c","sha1":"page@d9e37122c854193f7003c6c44bf8096c-1791404263419.jpeg","width":1280,"height":720,"timestamp":2788.731,"frameSwapWallTime":1791404263413.241}
+{"type":"screencast-frame","pageId":"page@d9e37122c854193f7003c6c44bf8096c","sha1":"page@d9e37122c854193f7003c6c44bf8096c-1791404263439.jpeg","width":1280,"height":720,"timestamp":2808.806,"frameSwapWallTime":1791404263433.156}
+{"type":"screencast-frame","pageId":"page@d9e37122c854193f7003c6c44bf8096c","sha1":"page@d9e37122c854193f7003c6c44bf8096c-1791404263460.jpeg","width":1280,"height":720,"timestamp":2829.76,"frameSwapWallTime":1791404263455.207}
+{"type":"screencast-frame","pageId":"page@d9e37122c854193f7003c6c44bf8096c","sha1":"page@d9e37122c854193f7003c6c44bf8096c-1791404263658.jpeg","width":1280,"height":720,"timestamp":3027.385,"frameSwapWallTime":1791404263654.399}
+{"type":"log","callId":"call@16","time":3041.11,"message":"  navigated to \"https://c4c-admin.lab.tasso.dev.br/admin/\""}
+{"type":"after","callId":"call@16","endTime":3041.149}
+{"type":"before","callId":"call@21","startTime":3041.435,"class":"Frame","method":"goto","params":{"url":"/admin/acessos","waitUntil":"load"},"stepId":"pw:api@44","pageId":"page@d9e37122c854193f7003c6c44bf8096c","beforeSnapshot":"before@call@21"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@21","snapshotName":"before@call@21","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/","doctype":"html","html":["HTML",{"lang":"en"},["HEAD",{},[[10,0]],[[10,1]],[[10,2]],[[10,3]],[[10,4]],[[10,5]],[[10,6]],[[10,7]],["TITLE",{},"Admin Workspace"],[[10,10]],[[10,11]],[[10,12]],[[10,13]],[[10,14]]],[[10,16]],["BODY",{},[[10,17]],["DIV",{"id":"root"},["DIV",{"class":"app-shell"},["ASIDE",{"class":"app-sidebar "},["A",{"aria-label":"admin-spa — início","class":"backoffice-brand","href":"/admin/","data-discover":"true"},["SPAN",{"class":"brand-mark"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-code-xml lucide-code-2","aria-hidden":"true"},["path",{"d":"m18 16 4-4-4-4"}],["path",{"d":"m6 8-4 4 4 4"}],["path",{"d":"m14.5 4-5 16"}]]],["SPAN",{},"Code4Coders"],["SPAN",{"class":"brand-badge"},"Backoffice"]],["NAV",{"aria-label":"admin-spa navigation","class":"app-nav"},["A",{"aria-current":"page","class":"active","href":"/admin/","data-discover":"true"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-house lucide-home","aria-hidden":"true"},["path",{"d":"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"}],["path",{"d":"M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"}]],"Início"],["DIV",{"class":"sidebar-group"},["P",{"class":"sidebar-heading"},"Operação"],["A",{"class":"","href":"/admin/acessos","data-discover":"true"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-users","aria-hidden":"true"},["path",{"d":"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"}],["path",{"d":"M16 3.128a4 4 0 0 1 0 7.744"}],["path",{"d":"M22 21v-2a4 4 0 0 0-3-3.87"}],["circle",{"cx":"9","cy":"7","r":"4"}]],"Acessos"],["A",{"class":"","href":"/admin/auditoria","data-discover":"true"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-scroll-text","aria-hidden":"true"},["path",{"d":"M15 12h-5"}],["path",{"d":"M15 8h-5"}],["path",{"d":"M19 17V5a2 2 0 0 0-2-2H4"}],["path",{"d":"M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"}]],"Auditoria"]]]],["DIV",{"class":"app-main"},["HEADER",{"class":"app-header"},["BUTTON",{"aria-expanded":"false","aria-label":"Abrir navegação","class":"menu-button","type":"button"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"20","height":"20","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-menu","aria-hidden":"true"},["path",{"d":"M4 5h16"}],["path",{"d":"M4 12h16"}],["path",{"d":"M4 19h16"}]]],["A",{"aria-label":"admin-spa — início","class":"mobile-backoffice-brand","href":"/admin/","data-discover":"true"},["SPAN",{"class":"brand-mark"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-code-xml lucide-code-2","aria-hidden":"true"},["path",{"d":"m18 16 4-4-4-4"}],["path",{"d":"m6 8-4 4 4 4"}],["path",{"d":"m14.5 4-5 16"}]]],["SPAN",{},"Code4Coders"],["SPAN",{"class":"brand-badge"},"Backoffice"]],["BUTTON",{"class":"course-theme-toggle","type":"button","aria-label":"Alternar tema claro e escuro"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-moon","aria-hidden":"true"},["path",{"d":"M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"}]]],["DIV",{"class":"account-menu-wrap"},["BUTTON",{"aria-expanded":"false","aria-haspopup":"menu","class":"account-trigger","type":"button"},["SPAN",{"class":"account-avatar"},"BA"],["SPAN",{},"Backoffice administrator"],["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"16","height":"16","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-chevron-down","aria-hidden":"true"},["path",{"d":"m6 9 6 6 6-6"}]]]]],["MAIN",{"class":"page-shell dashboard-page authoring-page"},["HEADER",{"class":"dashboard-heading"},["P",{"class":"eyebrow"},"Início"],["H1",{},"Olá, ","Backoffice"],["P",{"class":"page-subtitle"},"Organize o conteúdo da sua escola."]],["P",{"class":"dashboard-roles"},["SPAN",{"class":"sr-only"},"Seus papéis: "]," ",["SPAN",{"class":"role-badge"},"administrador"]],["DIV",{"class":"area-grid"},["ARTICLE",{"class":"area-card"},["SPAN",{"class":"area-icon"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"22","height":"22","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-users","aria-hidden":"true"},["path",{"d":"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"}],["path",{"d":"M16 3.128a4 4 0 0 1 0 7.744"}],["path",{"d":"M22 21v-2a4 4 0 0 0-3-3.87"}],["circle",{"cx":"9","cy":"7","r":"4"}]]],["H2",{},"Acessos"],["P",{},"Convide pessoas e ajuste os papéis da equipe."],["A",{"class":"outline-button","href":"/admin/acessos","data-discover":"true"},"Abrir ","Acessos"," ",["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"16","height":"16","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-arrow-right","aria-hidden":"true"},["path",{"d":"M5 12h14"}],["path",{"d":"m12 5 7 7-7 7"}]]]],["ARTICLE",{"class":"area-card"},["SPAN",{"class":"area-icon"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"22","height":"22","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-scroll-text","aria-hidden":"true"},["path",{"d":"M15 12h-5"}],["path",{"d":"M15 8h-5"}],["path",{"d":"M19 17V5a2 2 0 0 0-2-2H4"}],["path",{"d":"M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"}]]],["H2",{},"Auditoria"],["P",{},"Consulte os atos administrativos registrados para o seu tenant."],["A",{"class":"outline-button","href":"/admin/auditoria","data-discover":"true"},"Abrir ","Auditoria"," ",["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"16","height":"16","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-arrow-right","aria-hidden":"true"},["path",{"d":"M5 12h14"}],["path",{"d":"m12 5 7 7-7 7"}]]]]]]]]],[[10,96]]]],"viewport":{"width":1280,"height":720},"timestamp":3047.895,"wallTime":1791404263677,"collectionTime":0.699999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@21","time":3049.057,"message":"navigating to \"https://c4c-admin.lab.tasso.dev.br/admin/acessos\", waiting until \"load\""}
+{"type":"screencast-frame","pageId":"page@d9e37122c854193f7003c6c44bf8096c","sha1":"page@d9e37122c854193f7003c6c44bf8096c-1791404263726.jpeg","width":1280,"height":720,"timestamp":3095.729,"frameSwapWallTime":1791404263722.33}
+{"type":"after","callId":"call@21","endTime":3110.933,"result":{"response":"<Response>"},"afterSnapshot":"after@call@21"}
+{"type":"console","messageType":"warning","text":"No `HydrateFallback` element provided to render during initial hydration","args":[{"preview":"No `HydrateFallback` element provided to render during initial hydration","value":"No `HydrateFallback` element provided to render during initial hydration"}],"location":{"url":"https://c4c-admin.lab.tasso.dev.br/admin/assets/index-BM9NQsa_.js","lineNumber":8,"columnNumber":51437},"time":3175.311,"pageId":"page@d9e37122c854193f7003c6c44bf8096c"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@21","snapshotName":"after@call@21","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":["HTML",{"lang":"en"},["HEAD",{},["BASE",{"href":"https://c4c-admin.lab.tasso.dev.br/admin/acessos"}],"\n    ",["META",{"charset":"utf-8"}],"\n    ",["META",{"name":"viewport","content":"width=device-width, initial-scale=1.0"}],"\n    ",["META",{"name":"description","content":"Admin workspace for platform operations."}],"\n    ",["TITLE",{},"Admin Workspace"],"\n    ","\n    ","\n    ",["LINK",{"rel":"stylesheet","crossorigin":"","href":"/admin/assets/index-tgMYCrRI.css"}],"\n  "],"\n  ",["BODY",{},"\n    ",["DIV",{"id":"root"}],"\n  \n\n"]],"viewport":{"width":1280,"height":720},"timestamp":3176.53,"wallTime":1791404263804,"collectionTime":0.7999999821186066,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"before","callId":"call@23","startTime":3184.993,"title":"Expect \"toBeVisible\"","class":"Frame","method":"expect","params":{"selector":"internal:role=heading[name=\"Equipe e papéis\"i]","expression":"to.be.visible","expectedValue":{"value":{"v":"undefined"},"handles":[]},"isNot":false,"timeout":15000},"stepId":"expect@45","pageId":"page@d9e37122c854193f7003c6c44bf8096c","beforeSnapshot":"before@call@23"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@23","snapshotName":"before@call@23","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":["HTML",{"lang":"en"},["HEAD",{},[[1,0]],[[1,1]],[[1,2]],[[1,3]],[[1,4]],[[1,5]],[[1,6]],[[1,7]],["TITLE",{},"Admin Workspace"],[[1,10]],[[1,11]],[[1,12]],[[1,13]],[[1,14]]],[[1,16]],["BODY",{},[[1,17]],["DIV",{"id":"root"},["DIV",{"class":"app-shell"},["ASIDE",{"class":"app-sidebar "},["A",{"aria-label":"admin-spa — início","class":"backoffice-brand","href":"/admin/","data-discover":"true"},["SPAN",{"class":"brand-mark"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-code-xml lucide-code-2","aria-hidden":"true"},["path",{"d":"m18 16 4-4-4-4"}],["path",{"d":"m6 8-4 4 4 4"}],["path",{"d":"m14.5 4-5 16"}]]],["SPAN",{},"Code4Coders"],["SPAN",{"class":"brand-badge"},"Backoffice"]],["NAV",{"aria-label":"admin-spa navigation","class":"app-nav"},["A",{"class":"","href":"/admin/","data-discover":"true"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-house lucide-home","aria-hidden":"true"},["path",{"d":"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"}],["path",{"d":"M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"}]],"Início"],["DIV",{"class":"sidebar-group"},["P",{"class":"sidebar-heading"},"Operação"],["A",{"aria-current":"page","class":"active","href":"/admin/acessos","data-discover":"true"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-users","aria-hidden":"true"},["path",{"d":"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"}],["path",{"d":"M16 3.128a4 4 0 0 1 0 7.744"}],["path",{"d":"M22 21v-2a4 4 0 0 0-3-3.87"}],["circle",{"cx":"9","cy":"7","r":"4"}]],"Acessos"],["A",{"class":"","href":"/admin/auditoria","data-discover":"true"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-scroll-text","aria-hidden":"true"},["path",{"d":"M15 12h-5"}],["path",{"d":"M15 8h-5"}],["path",{"d":"M19 17V5a2 2 0 0 0-2-2H4"}],["path",{"d":"M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"}]],"Auditoria"]]]],["DIV",{"class":"app-main"},["HEADER",{"class":"app-header"},["BUTTON",{"aria-expanded":"false","aria-label":"Abrir navegação","class":"menu-button","type":"button"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"20","height":"20","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-menu","aria-hidden":"true"},["path",{"d":"M4 5h16"}],["path",{"d":"M4 12h16"}],["path",{"d":"M4 19h16"}]]],["A",{"aria-label":"admin-spa — início","class":"mobile-backoffice-brand","href":"/admin/","data-discover":"true"},["SPAN",{"class":"brand-mark"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-code-xml lucide-code-2","aria-hidden":"true"},["path",{"d":"m18 16 4-4-4-4"}],["path",{"d":"m6 8-4 4 4 4"}],["path",{"d":"m14.5 4-5 16"}]]],["SPAN",{},"Code4Coders"],["SPAN",{"class":"brand-badge"},"Backoffice"]],["DIV",{"class":"account-menu-wrap"},["BUTTON",{"aria-expanded":"false","aria-haspopup":"menu","class":"account-trigger","type":"button"},["SPAN",{"class":"account-avatar"},"BA"],["SPAN",{},"Backoffice administrator"],["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"16","height":"16","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-chevron-down","aria-hidden":"true"},["path",{"d":"m6 9 6 6 6-6"}]]]]],["MAIN",{"class":"page-shell staff-access-page"},["DIV",{"class":"page-heading-row"},["DIV",{},["P",{"class":"eyebrow"},"Acessos"],["H1",{},"Equipe e papéis"],["P",{"class":"page-subtitle"},"Quem opera a escola e o que cada pessoa pode fazer."]],["BUTTON",{"class":"primary-button","type":"button"},"Convidar"]],["DIV",{"aria-label":"Acessos","class":"access-tabs","role":"tablist"},["BUTTON",{"aria-selected":"true","class":"active","role":"tab","type":"button"},"Pessoas · ","0"],["BUTTON",{"aria-selected":"false","class":"","role":"tab","type":"button"},"Convites pendentes · ","0"]],["SECTION",{"aria-label":"Pessoas com acesso","class":"access-table","role":"tabpanel"},["DIV",{"class":"access-table-header staff-grid"},["SPAN",{},"Nome"],["SPAN",{},"E-mail"],["SPAN",{},"Papéis"],["SPAN"]],["P",{"class":"table-message","role":"status"},"Carregando pessoas…"]]]]]],[[1,19]]]],"viewport":{"width":1280,"height":720},"timestamp":3198.704,"wallTime":1791404263827,"collectionTime":5.899999976158142,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@23","time":3200.024,"message":"Expect \"toBeVisible\" with timeout 15000ms"}
+{"type":"log","callId":"call@23","time":3200.042,"message":"waiting for getByRole('heading', { name: 'Equipe e papéis' })"}
+{"type":"screencast-frame","pageId":"page@d9e37122c854193f7003c6c44bf8096c","sha1":"page@d9e37122c854193f7003c6c44bf8096c-1791404263855.jpeg","width":1280,"height":720,"timestamp":3224.889,"frameSwapWallTime":1791404263850.828}
+{"type":"after","callId":"call@23","endTime":3225.598,"afterSnapshot":"after@call@23"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@23","snapshotName":"after@call@23","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":["HTML",{"lang":"en"},[[1,2]],[[2,16]],["BODY",{},[[2,17]],["DIV",{"id":"root"},["DIV",{"class":"app-shell"},[[1,36]],["DIV",{"class":"app-main"},[[1,60]],["MAIN",{"class":"page-shell staff-access-page"},["DIV",{"class":"page-heading-row"},["DIV",{},[[1,62]],["H1",{"__playwright_target__":""},[[1,63]]],[[1,66]]],[[1,69]]],[[1,77]],[[1,88]]]]]],[[2,19]]]],"viewport":{"width":1280,"height":720},"timestamp":3227.507,"wallTime":1791404263857,"collectionTime":0.5,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"before","callId":"call@25","startTime":3229.785,"class":"Frame","method":"click","params":{"selector":"internal:role=button[name=\"Ações para Qa Cap002 Financeiro\"i]","strict":true},"stepId":"pw:api@46","pageId":"page@d9e37122c854193f7003c6c44bf8096c","beforeSnapshot":"before@call@25"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@25","snapshotName":"before@call@25","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":["HTML",{"lang":"en"},[[2,2]],[[3,16]],["BODY",{},[[3,17]],["DIV",{"id":"root"},["DIV",{"class":"app-shell"},[[2,36]],["DIV",{"class":"app-main"},[[2,60]],["MAIN",{"class":"page-shell staff-access-page"},["DIV",{"class":"page-heading-row"},["DIV",{},[[2,62]],["H1",{},[[2,63]]],[[2,66]]],[[2,69]]],[[2,77]],[[2,88]]]]]],[[3,19]]]],"viewport":{"width":1280,"height":720},"timestamp":3231.987,"wallTime":1791404263862,"collectionTime":0.800000011920929,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@25","time":3232.528,"message":"waiting for getByRole('button', { name: 'Ações para Qa Cap002 Financeiro' })"}
+{"type":"screencast-frame","pageId":"page@d9e37122c854193f7003c6c44bf8096c","sha1":"page@d9e37122c854193f7003c6c44bf8096c-1791404263901.jpeg","width":1280,"height":720,"timestamp":3270.572,"frameSwapWallTime":1791404263895.8271}
+{"type":"screencast-frame","pageId":"page@d9e37122c854193f7003c6c44bf8096c","sha1":"page@d9e37122c854193f7003c6c44bf8096c-1791404263940.jpeg","width":1280,"height":720,"timestamp":3309.988,"frameSwapWallTime":1791404263935.363}
+{"type":"log","callId":"call@25","time":3315.094,"message":"  locator resolved to <button type=\"button\" class=\"icon-button\" aria-expanded=\"false\" aria-label=\"Ações para Qa Cap002 Financeiro\">…</button>"}
+{"type":"log","callId":"call@25","time":3316.651,"message":"attempting click action"}
+{"type":"log","callId":"call@25","time":3316.744,"message":"  waiting for element to be visible, enabled and stable"}
+{"type":"log","callId":"call@25","time":3323.087,"message":"  element is visible, enabled and stable"}
+{"type":"log","callId":"call@25","time":3323.115,"message":"  scrolling into view if needed"}
+{"type":"log","callId":"call@25","time":3323.914,"message":"  done scrolling"}
+{"type":"input","callId":"call@25","point":{"x":1214.98,"y":661.5},"inputSnapshot":"input@call@25"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@25","snapshotName":"input@call@25","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":["HTML",{"lang":"en"},[[3,2]],[[4,16]],["BODY",{},[[4,17]],["DIV",{"id":"root"},["DIV",{"class":"app-shell"},[[3,36]],["DIV",{"class":"app-main"},[[3,60]],["MAIN",{"class":"page-shell staff-access-page"},[[1,2]],["DIV",{"aria-label":"Acessos","class":"access-tabs","role":"tablist"},["BUTTON",{"aria-selected":"true","class":"active","role":"tab","type":"button"},[[3,71]],"11"],["BUTTON",{"aria-selected":"false","class":"","role":"tab","type":"button"},[[3,74]],"2"]],["SECTION",{"aria-label":"Pessoas com acesso","class":"access-table","role":"tabpanel"},[[3,85]],["DIV",{"class":"access-row staff-grid"},["DIV",{"class":"staff-name"},["SPAN",{"class":"small-avatar"},"BA"],["SPAN",{},["STRONG",{},"Backoffice administrator"],["SMALL",{"class":"self-badge"},"você"]]],["SPAN",{"class":"row-muted"},"admin@example.com"],["SPAN",{"class":"role-badges"},["SPAN",{"class":"role-badge"},"administrador"]],["SPAN",{"class":"row-muted"},"—"]],["DIV",{"class":"access-row staff-grid"},["DIV",{"class":"staff-name"},["SPAN",{"class":"small-avatar"},"CS"],["SPAN",{},["STRONG",{},"Codex Smoke Support"]]],["SPAN",{"class":"row-muted"},"codex-smoke-support-20260926-1721@example.invalid"],["SPAN",{"class":"role-badges"},["SPAN",{"class":"role-badge"},"suporte"]],["DIV",{"class":"row-menu-wrap"},["BUTTON",{"aria-expanded":"false","aria-label":"Ações para Codex Smoke Support","class":"icon-button","type":"button"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-ellipsis lucide-more-horizontal","aria-hidden":"true"},["circle",{"cx":"12","cy":"12","r":"1"}],["circle",{"cx":"19","cy":"12","r":"1"}],["circle",{"cx":"5","cy":"12","r":"1"}]]]]],["DIV",{"class":"access-row staff-grid"},["DIV",{"class":"staff-name"},["SPAN",{"class":"small-avatar"},"CS"],["SPAN",{},["STRONG",{},"Codex Smoke Teacher"]]],["SPAN",{"class":"row-muted"},"codex-smoke-prof-20260926-1721@example.invalid"],["SPAN",{"class":"role-badges"},["SPAN",{"class":"role-badge"},"professor"]],["DIV",{"class":"row-menu-wrap"},["BUTTON",{"aria-expanded":"false","aria-label":"Ações para Codex Smoke Teacher","class":"icon-button","type":"button"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-ellipsis lucide-more-horizontal","aria-hidden":"true"},["circle",{"cx":"12","cy":"12","r":"1"}],["circle",{"cx":"19","cy":"12","r":"1"}],["circle",{"cx":"5","cy":"12","r":"1"}]]]]],["DIV",{"class":"access-row staff-grid"},["DIV",{"class":"staff-name"},["SPAN",{"class":"small-avatar"},"F"],["SPAN",{},["STRONG",{},"Financeiro"]]],["SPAN",{"class":"row-muted"},"financeiro@example.com"],["SPAN",{"class":"role-badges"},["SPAN",{"class":"role-badge"},"financeiro"]],["DIV",{"class":"row-menu-wrap"},["BUTTON",{"aria-expanded":"false","aria-label":"Ações para Financeiro","class":"icon-button","type":"button"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-ellipsis lucide-more-horizontal","aria-hidden":"true"},["circle",{"cx":"12","cy":"12","r":"1"}],["circle",{"cx":"19","cy":"12","r":"1"}],["circle",{"cx":"5","cy":"12","r":"1"}]]]]],["DIV",{"class":"access-row staff-grid"},["DIV",{"class":"staff-name"},["SPAN",{"class":"small-avatar"},"LS"],["SPAN",{},["STRONG",{},"Lesson Smoke Finance"]]],["SPAN",{"class":"row-muted"},"lesson-01a102ac49ee70ac9e33198bf8676f4b@staff.test"],["SPAN",{"class":"role-badges"},["SPAN",{"class":"role-badge"},"financeiro"],["SPAN",{"class":"role-badge"},"professor"]],["DIV",{"class":"row-menu-wrap"},["BUTTON",{"aria-expanded":"false","aria-label":"Ações para Lesson Smoke Finance","class":"icon-button","type":"button"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-ellipsis lucide-more-horizontal","aria-hidden":"true"},["circle",{"cx":"12","cy":"12","r":"1"}],["circle",{"cx":"19","cy":"12","r":"1"}],["circle",{"cx":"5","cy":"12","r":"1"}]]]]],["DIV",{"class":"access-row staff-grid"},["DIV",{"class":"staff-name"},["SPAN",{"class":"small-avatar"},"P0"],["SPAN",{},["STRONG",{},"Professor 01"]]],["SPAN",{"class":"row-muted"},"professor01@teste.com"],["SPAN",{"class":"role-badges"},["SPAN",{"class":"role-badge"},"professor"]],["DIV",{"class":"row-menu-wrap"},["BUTTON",{"aria-expanded":"false","aria-label":"Ações para Professor 01","class":"icon-button","type":"button"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-ellipsis lucide-more-horizontal","aria-hidden":"true"},["circle",{"cx":"12","cy":"12","r":"1"}],["circle",{"cx":"19","cy":"12","r":"1"}],["circle",{"cx":"5","cy":"12","r":"1"}]]]]],["DIV",{"class":"access-row staff-grid"},["DIV",{"class":"staff-name"},["SPAN",{"class":"small-avatar"},"QC"],["SPAN",{},["STRONG",{},"Qa Cap002 Financeiro"]]],["SPAN",{"class":"row-muted"},"qa.cap002.financeiro@example.test"],["SPAN",{"class":"role-badges"},["SPAN",{"class":"role-badge"},"suporte"]],["DIV",{"class":"row-menu-wrap"},["BUTTON",{"__playwright_target__":"","aria-expanded":"false","aria-label":"Ações para Qa Cap002 Financeiro","class":"icon-button","type":"button"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-ellipsis lucide-more-horizontal","aria-hidden":"true"},["circle",{"cx":"12","cy":"12","r":"1"}],["circle",{"cx":"19","cy":"12","r":"1"}],["circle",{"cx":"5","cy":"12","r":"1"}]]]]],["DIV",{"class":"access-row staff-grid"},["DIV",{"class":"staff-name"},["SPAN",{"class":"small-avatar"},"QC"],["SPAN",{},["STRONG",{},"Qa Cap002 Professor"]]],["SPAN",{"class":"row-muted"},"qa.cap002.professor@example.test"],["SPAN",{"class":"role-badges"},["SPAN",{"class":"role-badge"},"professor"],["SPAN",{"class":"role-badge"},"suporte"]],["DIV",{"class":"row-menu-wrap"},["BUTTON",{"aria-expanded":"false","aria-label":"Ações para Qa Cap002 Professor","class":"icon-button","type":"button"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-ellipsis lucide-more-horizontal","aria-hidden":"true"},["circle",{"cx":"12","cy":"12","r":"1"}],["circle",{"cx":"19","cy":"12","r":"1"}],["circle",{"cx":"5","cy":"12","r":"1"}]]]]],["DIV",{"class":"access-row staff-grid"},["DIV",{"class":"staff-name"},["SPAN",{"class":"small-avatar"},"QC"],["SPAN",{},["STRONG",{},"Qa Cap002 Suporte"]]],["SPAN",{"class":"row-muted"},"qa.cap002.suporte@example.test"],["SPAN",{"class":"role-badges"},["SPAN",{"class":"role-badge"},"suporte"]],["DIV",{"class":"row-menu-wrap"},["BUTTON",{"aria-expanded":"false","aria-label":"Ações para Qa Cap002 Suporte","class":"icon-button","type":"button"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-ellipsis lucide-more-horizontal","aria-hidden":"true"},["circle",{"cx":"12","cy":"12","r":"1"}],["circle",{"cx":"19","cy":"12","r":"1"}],["circle",{"cx":"5","cy":"12","r":"1"}]]]]],["DIV",{"class":"access-row staff-grid"},["DIV",{"class":"staff-name"},["SPAN",{"class":"small-avatar"},"QC"],["SPAN",{},["STRONG",{},"Qa Cap030 Suporte"]]],["SPAN",{"class":"row-muted"},"qa.cap030.convite@example.test"],["SPAN",{"class":"role-badges"},["SPAN",{"class":"role-badge"},"suporte"]],["DIV",{"class":"row-menu-wrap"},["BUTTON",{"aria-expanded":"false","aria-label":"Ações para Qa Cap030 Suporte","class":"icon-button","type":"button"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-ellipsis lucide-more-horizontal","aria-hidden":"true"},["circle",{"cx":"12","cy":"12","r":"1"}],["circle",{"cx":"19","cy":"12","r":"1"}],["circle",{"cx":"5","cy":"12","r":"1"}]]]]],["DIV",{"class":"access-row staff-grid"},["DIV",{"class":"staff-name"},["SPAN",{"class":"small-avatar"},"S"],["SPAN",{},["STRONG",{},"suporte@example.com"]]],["SPAN",{"class":"row-muted"},"suporte@example.com"],["SPAN",{"class":"role-badges"},["SPAN",{"class":"role-badge"},"suporte"]],["DIV",{"class":"row-menu-wrap"},["BUTTON",{"aria-expanded":"false","aria-label":"Ações para suporte@example.com","class":"icon-button","type":"button"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-ellipsis lucide-more-horizontal","aria-hidden":"true"},["circle",{"cx":"12","cy":"12","r":"1"}],["circle",{"cx":"19","cy":"12","r":"1"}],["circle",{"cx":"5","cy":"12","r":"1"}]]]]]]]]]],[[4,19]]]],"viewport":{"width":1280,"height":720},"timestamp":3333.976,"wallTime":1791404263958,"collectionTime":1.4000000059604645,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@25","time":3338.471,"message":"  performing click action"}
+{"type":"log","callId":"call@25","time":3348.455,"message":"  click action done"}
+{"type":"log","callId":"call@25","time":3348.499,"message":"  waiting for scheduled navigations to finish"}
+{"type":"log","callId":"call@25","time":3349.892,"message":"  navigations have finished"}
+{"type":"after","callId":"call@25","endTime":3350.187,"afterSnapshot":"after@call@25"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@25","snapshotName":"after@call@25","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":["HTML",{"lang":"en"},[[4,2]],[[5,16]],["BODY",{},[[5,17]],["DIV",{"id":"root"},["DIV",{"class":"app-shell"},[[4,36]],["DIV",{"class":"app-main"},[[4,60]],["MAIN",{"class":"page-shell staff-access-page"},[[2,2]],[[1,4]],["SECTION",{"aria-label":"Pessoas com acesso","class":"access-table","role":"tabpanel"},[[4,85]],[[1,20]],[[1,38]],[[1,56]],[[1,74]],[[1,94]],[[1,112]],["DIV",{"class":"access-row staff-grid"},[[1,118]],[[1,120]],[[1,123]],["DIV",{"class":"row-menu-wrap"},["BUTTON",{"__playwright_target__":"","aria-expanded":"true","aria-label":"Ações para Qa Cap002 Financeiro","class":"icon-button","type":"button"},[[1,127]]],["DIV",{"class":"row-menu"},["BUTTON",{"type":"button"},"Conceder papel"],["BUTTON",{"type":"button"},"Revogar papel"],["BUTTON",{"type":"button"},"Trocar papel"]]]],[[1,150]],[[1,168]],[[1,186]],[[1,204]]]]]]],[[5,19]]]],"viewport":{"width":1280,"height":720},"timestamp":3356.914,"wallTime":1791404263983,"collectionTime":1.7999999821186066,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"before","callId":"call@27","startTime":3359.4,"class":"Frame","method":"click","params":{"selector":"internal:role=button[name=\"Conceder papel\"s]","strict":true},"stepId":"pw:api@47","pageId":"page@d9e37122c854193f7003c6c44bf8096c","beforeSnapshot":"before@call@27"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@27","snapshotName":"before@call@27","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":["HTML",{"lang":"en"},[[5,2]],[[6,16]],["BODY",{},[[6,17]],["DIV",{"id":"root"},["DIV",{"class":"app-shell"},[[5,36]],["DIV",{"class":"app-main"},[[5,60]],["MAIN",{"class":"page-shell staff-access-page"},[[3,2]],[[2,4]],["SECTION",{"aria-label":"Pessoas com acesso","class":"access-table","role":"tabpanel"},[[5,85]],[[2,20]],[[2,38]],[[2,56]],[[2,74]],[[2,94]],[[2,112]],["DIV",{"class":"access-row staff-grid"},[[2,118]],[[2,120]],[[2,123]],["DIV",{"class":"row-menu-wrap"},["BUTTON",{"aria-expanded":"true","aria-label":"Ações para Qa Cap002 Financeiro","class":"icon-button","type":"button"},[[2,127]]],[[1,7]]]],[[2,150]],[[2,168]],[[2,186]],[[2,204]]]]]]],[[6,19]]]],"viewport":{"width":1280,"height":720},"timestamp":3362.218,"wallTime":1791404263992,"collectionTime":0.9000000059604645,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@27","time":3362.567,"message":"waiting for getByRole('button', { name: 'Conceder papel', exact: true })"}
+{"type":"screencast-frame","pageId":"page@d9e37122c854193f7003c6c44bf8096c","sha1":"page@d9e37122c854193f7003c6c44bf8096c-1791404263996.jpeg","width":1280,"height":720,"timestamp":3365.178,"frameSwapWallTime":1791404263991.3271}
+{"type":"log","callId":"call@27","time":3367.794,"message":"  locator resolved to <button type=\"button\">Conceder papel</button>"}
+{"type":"log","callId":"call@27","time":3369.487,"message":"attempting click action"}
+{"type":"log","callId":"call@27","time":3369.598,"message":"  waiting for element to be visible, enabled and stable"}
+{"type":"log","callId":"call@27","time":3372.757,"message":"  element is visible, enabled and stable"}
+{"type":"log","callId":"call@27","time":3372.779,"message":"  scrolling into view if needed"}
+{"type":"log","callId":"call@27","time":3373.785,"message":"  done scrolling"}
+{"type":"input","callId":"call@27","point":{"x":1140.98,"y":702},"inputSnapshot":"input@call@27"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@27","snapshotName":"input@call@27","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":["HTML",{"__playwright_scroll_top_":"2","lang":"en"},[[6,2]],[[7,16]],["BODY",{},[[7,17]],["DIV",{"id":"root"},["DIV",{"class":"app-shell"},[[6,36]],["DIV",{"class":"app-main"},[[6,60]],["MAIN",{"class":"page-shell staff-access-page"},[[4,2]],[[3,4]],["SECTION",{"aria-label":"Pessoas com acesso","class":"access-table","role":"tabpanel"},[[6,85]],[[3,20]],[[3,38]],[[3,56]],[[3,74]],[[3,94]],[[3,112]],["DIV",{"class":"access-row staff-grid"},[[3,118]],[[3,120]],[[3,123]],["DIV",{"class":"row-menu-wrap"},[[1,0]],["DIV",{"class":"row-menu"},["BUTTON",{"__playwright_target__":"","type":"button"},[[2,1]]],[[2,4]],[[2,6]]]]],[[3,150]],[[3,168]],[[3,186]],[[3,204]]]]]]],[[7,19]]]],"viewport":{"width":1280,"height":720},"timestamp":3377.17,"wallTime":1791404264007,"collectionTime":0.9000000059604645,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@27","time":3379.687,"message":"  performing click action"}
+{"type":"log","callId":"call@27","time":3393.162,"message":"  click action done"}
+{"type":"log","callId":"call@27","time":3393.182,"message":"  waiting for scheduled navigations to finish"}
+{"type":"log","callId":"call@27","time":3393.947,"message":"  navigations have finished"}
+{"type":"after","callId":"call@27","endTime":3394.102,"afterSnapshot":"after@call@27"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@27","snapshotName":"after@call@27","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":["HTML",{"__playwright_scroll_top_":"2","lang":"en"},[[7,2]],[[8,16]],["BODY",{},[[8,17]],["DIV",{"id":"root"},["DIV",{"class":"app-shell"},[[7,36]],["DIV",{"class":"app-main"},[[7,60]],["MAIN",{"class":"page-shell staff-access-page"},[[5,2]],[[4,4]],["SECTION",{"aria-label":"Pessoas com acesso","class":"access-table","role":"tabpanel"},[[7,85]],[[4,20]],[[4,38]],[[4,56]],[[4,74]],[[4,94]],[[4,112]],["DIV",{"class":"access-row staff-grid"},[[4,118]],[[4,120]],[[4,123]],["DIV",{"class":"row-menu-wrap"},["BUTTON",{"aria-expanded":"false","aria-label":"Ações para Qa Cap002 Financeiro","class":"icon-button","type":"button"},[[4,127]]]]],[[4,150]],[[4,168]],[[4,186]],[[4,204]]],["DIV",{"class":"dialog-backdrop"},["SECTION",{"aria-labelledby":"dialog-title","aria-modal":"true","class":"dialog-card","role":"dialog"},["BUTTON",{"aria-label":"Fechar","class":"dialog-close","type":"button"},["svg",{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"lucide lucide-x","aria-hidden":"true"},["path",{"d":"M18 6 6 18"}],["path",{"d":"m6 6 12 12"}]]],["H2",{"id":"dialog-title"},"Conceder papel"],["P",{},"Qa Cap002 Financeiro"," · ","qa.cap002.financeiro@example.test"],["FORM",{"novalidate":""},["LABEL",{"for":"staff-role-01a117f9-ee4a-7dd9-ad7b-d5c1ddd19171"},"Papel para ","Qa Cap002 Financeiro"],["SELECT",{"id":"staff-role-01a117f9-ee4a-7dd9-ad7b-d5c1ddd19171","name":"role"},["OPTION",{"__playwright_selected_":"true","value":"professor"},"professor"],["OPTION",{"__playwright_selected_":"false","value":"financeiro"},"financeiro"],["OPTION",{"__playwright_selected_":"false","value":"administrador"},"administrador"]],["LABEL",{"for":"staff-reason-01a117f9-ee4a-7dd9-ad7b-d5c1ddd19171"},"Motivo para ","Qa Cap002 Financeiro"],["TEXTAREA",{"__playwright_value_":"","id":"staff-reason-01a117f9-ee4a-7dd9-ad7b-d5c1ddd19171","maxlength":"500","rows":"2","name":"reason","aria-invalid":"false"}],["P",{"class":"field-hint"},"Fica registrado na auditoria. Não cite dados pessoais de outras pessoas. ",["SPAN",{},"0","/500"]],["DIV",{"class":"dialog-actions"},["BUTTON",{"class":"primary-button","type":"button"},"Conceder papel"]]]]]]]]],[[8,19]]]],"viewport":{"width":1280,"height":720},"timestamp":3396.767,"wallTime":1791404264026,"collectionTime":1.2999999821186066,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"before","callId":"call@29","startTime":3399.916,"title":"Expect \"toBeVisible\"","class":"Frame","method":"expect","params":{"selector":"internal:role=dialog","expression":"to.be.visible","expectedValue":{"value":{"v":"undefined"},"handles":[]},"isNot":false,"timeout":10000},"stepId":"expect@48","pageId":"page@d9e37122c854193f7003c6c44bf8096c","beforeSnapshot":"before@call@29"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@29","snapshotName":"before@call@29","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[1,44]],"viewport":{"width":1280,"height":720},"timestamp":3402.586,"wallTime":1791404264032,"collectionTime":1.0999999940395355,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@29","time":3403.108,"message":"Expect \"toBeVisible\" with timeout 10000ms"}
+{"type":"log","callId":"call@29","time":3403.123,"message":"waiting for getByRole('dialog')"}
+{"type":"after","callId":"call@29","endTime":3406.694,"afterSnapshot":"after@call@29"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@29","snapshotName":"after@call@29","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":["HTML",{"__playwright_scroll_top_":"2","lang":"en"},[[9,2]],[[10,16]],["BODY",{},[[10,17]],["DIV",{"id":"root"},["DIV",{"class":"app-shell"},[[9,36]],["DIV",{"class":"app-main"},[[9,60]],["MAIN",{"class":"page-shell staff-access-page"},[[7,2]],[[6,4]],[[2,3]],["DIV",{"class":"dialog-backdrop"},["SECTION",{"__playwright_target__":"","aria-labelledby":"dialog-title","aria-modal":"true","class":"dialog-card","role":"dialog"},[[2,7]],[[2,9]],[[2,13]],[[2,36]]]]]]]],[[10,19]]]],"viewport":{"width":1280,"height":720},"timestamp":3409.618,"wallTime":1791404264039,"collectionTime":1,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"before","callId":"call@31","startTime":3412.167,"class":"Frame","method":"selectOption","params":{"selector":"internal:role=dialog >> internal:role=combobox[name=/Papel para/]","strict":true,"options":[{"valueOrLabel":"suporte"}]},"stepId":"pw:api@49","pageId":"page@d9e37122c854193f7003c6c44bf8096c","beforeSnapshot":"before@call@31"}
+{"type":"screencast-frame","pageId":"page@d9e37122c854193f7003c6c44bf8096c","sha1":"page@d9e37122c854193f7003c6c44bf8096c-1791404264043.jpeg","width":1280,"height":720,"timestamp":3412.913,"frameSwapWallTime":1791404264038.551}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"before@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":["HTML",{"__playwright_scroll_top_":"2","lang":"en"},[[10,2]],[[11,16]],["BODY",{},[[11,17]],["DIV",{"id":"root"},["DIV",{"class":"app-shell"},[[10,36]],["DIV",{"class":"app-main"},[[10,60]],["MAIN",{"class":"page-shell staff-access-page"},[[8,2]],[[7,4]],[[3,3]],["DIV",{"class":"dialog-backdrop"},["SECTION",{"aria-labelledby":"dialog-title","aria-modal":"true","class":"dialog-card","role":"dialog"},[[3,7]],[[3,9]],[[3,13]],[[3,36]]]]]]]],[[11,19]]]],"viewport":{"width":1280,"height":720},"timestamp":3414.533,"wallTime":1791404264044,"collectionTime":1.0999999940395355,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":3415.13,"message":"waiting for getByRole('dialog').getByRole('combobox', { name: /Papel para/ })"}
+{"type":"log","callId":"call@31","time":3420.85,"message":"  locator resolved to <select name=\"role\" id=\"staff-role-01a117f9-ee4a-7dd9-ad7b-d5c1ddd19171\">…</select>"}
+{"type":"log","callId":"call@31","time":3422.356,"message":"attempting select option action"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":["HTML",{"__playwright_scroll_top_":"2","lang":"en"},[[11,2]],[[12,16]],["BODY",{},[[12,17]],["DIV",{"id":"root"},["DIV",{"class":"app-shell"},[[11,36]],["DIV",{"class":"app-main"},[[11,60]],["MAIN",{"class":"page-shell staff-access-page"},[[9,2]],[[8,4]],[[4,3]],["DIV",{"class":"dialog-backdrop"},["SECTION",{"aria-labelledby":"dialog-title","aria-modal":"true","class":"dialog-card","role":"dialog"},[[4,7]],[[4,9]],[[4,13]],["FORM",{"novalidate":""},[[4,16]],["SELECT",{"__playwright_target__":"","id":"staff-role-01a117f9-ee4a-7dd9-ad7b-d5c1ddd19171","name":"role"},[[4,18]],[[4,20]],[[4,22]]],[[4,26]],[[4,27]],[[4,32]],[[4,35]]]]]]]]],[[12,19]]]],"viewport":{"width":1280,"height":720},"timestamp":3424.686,"wallTime":1791404264054,"collectionTime":0.8999999761581421,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":3425.117,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":3427.12,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":3427.136,"message":"retrying select option action"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[1,9]],"viewport":{"width":1280,"height":720},"timestamp":3428.723,"wallTime":1791404264059,"collectionTime":0.699999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":3428.895,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":3430.496,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":3430.511,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":3430.516,"message":"  waiting 20ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[2,9]],"viewport":{"width":1280,"height":720},"timestamp":3454.089,"wallTime":1791404264084,"collectionTime":0.7000000178813934,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":3454.257,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":3455.484,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":3455.494,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":3455.497,"message":"  waiting 100ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[3,9]],"viewport":{"width":1280,"height":720},"timestamp":3559.452,"wallTime":1791404264189,"collectionTime":0.699999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":3559.691,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":3561.303,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":3561.315,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":3561.319,"message":"  waiting 100ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[4,9]],"viewport":{"width":1280,"height":720},"timestamp":3664.884,"wallTime":1791404264295,"collectionTime":0.699999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":3665.041,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":3666.168,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":3666.176,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":3666.18,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[5,9]],"viewport":{"width":1280,"height":720},"timestamp":4170.289,"wallTime":1791404264800,"collectionTime":1.100000023841858,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":4170.561,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":4172.381,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":4172.4,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":4172.408,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[6,9]],"viewport":{"width":1280,"height":720},"timestamp":4676.169,"wallTime":1791404265306,"collectionTime":0.6000000238418579,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":4676.425,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":4677.662,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":4677.673,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":4677.676,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[7,9]],"viewport":{"width":1280,"height":720},"timestamp":5180.806,"wallTime":1791404265811,"collectionTime":0.5999999940395355,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":5180.98,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":5182.227,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":5182.238,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":5182.243,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[8,9]],"viewport":{"width":1280,"height":720},"timestamp":5686.15,"wallTime":1791404266316,"collectionTime":1.199999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":5686.383,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":5687.791,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":5687.807,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":5687.811,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[9,9]],"viewport":{"width":1280,"height":720},"timestamp":6191.535,"wallTime":1791404266822,"collectionTime":0.7000000178813934,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":6191.71,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":6192.974,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":6192.987,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":6192.991,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[10,9]],"viewport":{"width":1280,"height":720},"timestamp":6696.968,"wallTime":1791404267327,"collectionTime":0.8999999761581421,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":6697.116,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":6698.053,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":6698.061,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":6698.064,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[11,9]],"viewport":{"width":1280,"height":720},"timestamp":7201.646,"wallTime":1791404267832,"collectionTime":0.9000000059604645,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":7201.782,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":7203.072,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":7203.084,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":7203.089,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[12,9]],"viewport":{"width":1280,"height":720},"timestamp":7706.289,"wallTime":1791404268336,"collectionTime":0.800000011920929,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":7706.517,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":7707.763,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":7707.775,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":7707.779,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[13,9]],"viewport":{"width":1280,"height":720},"timestamp":8211.265,"wallTime":1791404268841,"collectionTime":0.800000011920929,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":8211.561,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":8212.618,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":8212.627,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":8212.63,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[14,9]],"viewport":{"width":1280,"height":720},"timestamp":8716.418,"wallTime":1791404269346,"collectionTime":0.7999999821186066,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":8716.594,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":8717.77,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":8717.78,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":8717.784,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[15,9]],"viewport":{"width":1280,"height":720},"timestamp":9222.206,"wallTime":1791404269852,"collectionTime":0.800000011920929,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":9222.389,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":9223.758,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":9223.771,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":9223.775,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[16,9]],"viewport":{"width":1280,"height":720},"timestamp":9727.7,"wallTime":1791404270358,"collectionTime":0.7000000178813934,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":9727.884,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":9729.218,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":9729.237,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":9729.242,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[17,9]],"viewport":{"width":1280,"height":720},"timestamp":10232.941,"wallTime":1791404270863,"collectionTime":0.9000000059604645,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":10233.079,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":10234.209,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":10234.22,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":10234.224,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[18,9]],"viewport":{"width":1280,"height":720},"timestamp":10738.017,"wallTime":1791404271368,"collectionTime":0.9000000059604645,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":10738.144,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":10739.178,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":10739.187,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":10739.19,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[19,9]],"viewport":{"width":1280,"height":720},"timestamp":11243.409,"wallTime":1791404271873,"collectionTime":1.2000000178813934,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":11243.647,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":11245.41,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":11245.429,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":11245.434,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[20,9]],"viewport":{"width":1280,"height":720},"timestamp":11750.083,"wallTime":1791404272380,"collectionTime":1.2999999821186066,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":11750.321,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":11751.903,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":11751.919,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":11751.923,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[21,9]],"viewport":{"width":1280,"height":720},"timestamp":12256.044,"wallTime":1791404272886,"collectionTime":1,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":12256.331,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":12258.044,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":12258.061,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":12258.066,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[22,9]],"viewport":{"width":1280,"height":720},"timestamp":12762.529,"wallTime":1791404273392,"collectionTime":1,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":12762.759,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":12764.451,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":12764.471,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":12764.477,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[23,9]],"viewport":{"width":1280,"height":720},"timestamp":13268.937,"wallTime":1791404273899,"collectionTime":1,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":13269.183,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":13270.784,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":13270.799,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":13270.803,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[24,9]],"viewport":{"width":1280,"height":720},"timestamp":13774.917,"wallTime":1791404274405,"collectionTime":0.800000011920929,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":13775.175,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":13776.781,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":13776.804,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":13776.81,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[25,9]],"viewport":{"width":1280,"height":720},"timestamp":14291.854,"wallTime":1791404274921,"collectionTime":2.199999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":14292.373,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":14295.981,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":14296.02,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":14296.031,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[26,9]],"viewport":{"width":1280,"height":720},"timestamp":14811.378,"wallTime":1791404275440,"collectionTime":2.0999999940395355,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":14811.623,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":14822.445,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":14822.496,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":14822.509,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[27,9]],"viewport":{"width":1280,"height":720},"timestamp":15361.84,"wallTime":1791404275987,"collectionTime":21.30000001192093,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":15362.197,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":15398.123,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":15398.157,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":15398.166,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[28,9]],"viewport":{"width":1280,"height":720},"timestamp":15913.996,"wallTime":1791404276543,"collectionTime":3.699999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":15914.494,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":15921.635,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":15921.766,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":15921.785,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[29,9]],"viewport":{"width":1280,"height":720},"timestamp":16434.147,"wallTime":1791404277061,"collectionTime":1.899999976158142,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":16434.423,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":16437.87,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":16437.9,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":16437.909,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[30,9]],"viewport":{"width":1280,"height":720},"timestamp":16945.364,"wallTime":1791404277575,"collectionTime":2.0999999940395355,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":16945.773,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":16951.009,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":16951.064,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":16951.082,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[31,9]],"viewport":{"width":1280,"height":720},"timestamp":17458.742,"wallTime":1791404278088,"collectionTime":1.699999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":17460.127,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":17465.903,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":17465.95,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":17465.965,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[32,9]],"viewport":{"width":1280,"height":720},"timestamp":17973.521,"wallTime":1791404278603,"collectionTime":1.7999999821186066,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":17974.168,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":17987.515,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":17987.562,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":17987.586,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[33,9]],"viewport":{"width":1280,"height":720},"timestamp":18495.751,"wallTime":1791404279125,"collectionTime":1.7000000178813934,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":18496.152,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":18500.099,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":18500.132,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":18500.139,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[34,9]],"viewport":{"width":1280,"height":720},"timestamp":19006.787,"wallTime":1791404279636,"collectionTime":1.2000000178813934,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":19007.231,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":19009.43,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":19009.458,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":19009.466,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[35,9]],"viewport":{"width":1280,"height":720},"timestamp":19516.781,"wallTime":1791404280146,"collectionTime":2,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":19517.227,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":19520.532,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":19520.742,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":19520.774,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[36,9]],"viewport":{"width":1280,"height":720},"timestamp":20029.208,"wallTime":1791404280657,"collectionTime":1.7000000178813934,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":20029.775,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":20042.205,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":20042.24,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":20042.257,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[37,9]],"viewport":{"width":1280,"height":720},"timestamp":20557.544,"wallTime":1791404281187,"collectionTime":2.5,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":20558.363,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":20562.844,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":20562.893,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":20562.919,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[38,9]],"viewport":{"width":1280,"height":720},"timestamp":21070.658,"wallTime":1791404281700,"collectionTime":1.7999999821186066,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":21071.201,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":21078.763,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":21078.803,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":21078.82,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[39,9]],"viewport":{"width":1280,"height":720},"timestamp":21589.155,"wallTime":1791404282218,"collectionTime":2.4000000059604645,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":21589.582,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":21592.707,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":21592.762,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":21592.773,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[40,9]],"viewport":{"width":1280,"height":720},"timestamp":22099.272,"wallTime":1791404282729,"collectionTime":1.5,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":22099.685,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":22102.206,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":22102.305,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":22102.335,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[41,9]],"viewport":{"width":1280,"height":720},"timestamp":22609.975,"wallTime":1791404283239,"collectionTime":1.800000011920929,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":22610.465,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":22613.505,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":22613.549,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":22613.561,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[42,9]],"viewport":{"width":1280,"height":720},"timestamp":23124.66,"wallTime":1791404283754,"collectionTime":2.4000000059604645,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":23125.089,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":23128.249,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":23128.3,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":23128.311,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[43,9]],"viewport":{"width":1280,"height":720},"timestamp":23635.416,"wallTime":1791404284265,"collectionTime":1.5999999940395355,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":23635.786,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":23638.864,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":23638.964,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":23638.979,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[44,9]],"viewport":{"width":1280,"height":720},"timestamp":24155.148,"wallTime":1791404284784,"collectionTime":2.300000011920929,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":24155.631,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":24159.297,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":24159.359,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":24159.372,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[45,9]],"viewport":{"width":1280,"height":720},"timestamp":24707.957,"wallTime":1791404285337,"collectionTime":21.099999994039536,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":24708.411,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":24724.193,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":24724.234,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":24724.245,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[46,9]],"viewport":{"width":1280,"height":720},"timestamp":25242.494,"wallTime":1791404285871,"collectionTime":2,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":25242.702,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":25251.713,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":25251.746,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":25251.754,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[47,9]],"viewport":{"width":1280,"height":720},"timestamp":25764.038,"wallTime":1791404286393,"collectionTime":1.699999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":25764.603,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":25773.354,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":25773.402,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":25773.413,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[48,9]],"viewport":{"width":1280,"height":720},"timestamp":26294.159,"wallTime":1791404286917,"collectionTime":2,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":26295.714,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":26306.992,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":26307.037,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":26307.069,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[49,9]],"viewport":{"width":1280,"height":720},"timestamp":26814.366,"wallTime":1791404287444,"collectionTime":1.5,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":26814.752,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":26821.997,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":26822.035,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":26822.138,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[50,9]],"viewport":{"width":1280,"height":720},"timestamp":27328.308,"wallTime":1791404287958,"collectionTime":1.4000000059604645,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":27328.616,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":27330.811,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":27330.83,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":27330.84,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[51,9]],"viewport":{"width":1280,"height":720},"timestamp":27839.084,"wallTime":1791404288468,"collectionTime":2.0999999940395355,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":27839.554,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":27843.31,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":27843.359,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":27843.386,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[52,9]],"viewport":{"width":1280,"height":720},"timestamp":28357.283,"wallTime":1791404288986,"collectionTime":1.899999976158142,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":28357.521,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":28367.611,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":28367.648,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":28367.657,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[53,9]],"viewport":{"width":1280,"height":720},"timestamp":28879.931,"wallTime":1791404289509,"collectionTime":1.7000000178813934,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":28880.406,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":28883.899,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":28883.952,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":28883.965,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[54,9]],"viewport":{"width":1280,"height":720},"timestamp":29391.302,"wallTime":1791404290021,"collectionTime":2.0999999940395355,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":29391.83,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":29408.08,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":29408.13,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":29408.139,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[55,9]],"viewport":{"width":1280,"height":720},"timestamp":29917.829,"wallTime":1791404290547,"collectionTime":2.7999999821186066,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":29918.289,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":29923.611,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":29923.667,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":29923.677,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[56,9]],"viewport":{"width":1280,"height":720},"timestamp":30432.162,"wallTime":1791404291061,"collectionTime":1.9000000059604645,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":30432.58,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":30435.483,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":30435.56,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":30435.571,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[57,9]],"viewport":{"width":1280,"height":720},"timestamp":30942.985,"wallTime":1791404291572,"collectionTime":1.699999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":30943.217,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":30946.273,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":30946.325,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":30946.335,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[58,9]],"viewport":{"width":1280,"height":720},"timestamp":31453.546,"wallTime":1791404292083,"collectionTime":2,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":31454.143,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":31456.919,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":31456.957,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":31456.965,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[59,9]],"viewport":{"width":1280,"height":720},"timestamp":31989.09,"wallTime":1791404292617,"collectionTime":4.300000011920929,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":31989.808,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":31997.8,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":31997.841,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":31997.862,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[60,9]],"viewport":{"width":1280,"height":720},"timestamp":32507.122,"wallTime":1791404293136,"collectionTime":2.899999976158142,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":32507.741,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":32511.148,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":32511.181,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":32511.189,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[61,9]],"viewport":{"width":1280,"height":720},"timestamp":33053.642,"wallTime":1791404293673,"collectionTime":23.600000023841858,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":33054.783,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":33068.19,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":33068.226,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":33068.235,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[62,9]],"viewport":{"width":1280,"height":720},"timestamp":33600.836,"wallTime":1791404294220,"collectionTime":2.899999976158142,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":33601.613,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":33613.951,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":33613.992,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":33614.089,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[63,9]],"viewport":{"width":1280,"height":720},"timestamp":34158.132,"wallTime":1791404294756,"collectionTime":4.199999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":34159.559,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":34182.707,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":34182.754,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":34182.767,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[64,9]],"viewport":{"width":1280,"height":720},"timestamp":34715.286,"wallTime":1791404294411,"collectionTime":16.5,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":34715.772,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":34722.156,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":34722.199,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":34722.315,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[65,9]],"viewport":{"width":1280,"height":720},"timestamp":35233.224,"wallTime":1791404294929,"collectionTime":4.5999999940395355,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":35233.679,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":35237.24,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":35237.264,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":35237.282,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[66,9]],"viewport":{"width":1280,"height":720},"timestamp":35750.707,"wallTime":1791404295447,"collectionTime":4.800000011920929,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":35751.169,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":35798.555,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":35798.589,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":35798.599,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[67,9]],"viewport":{"width":1280,"height":720},"timestamp":36335.663,"wallTime":1791404296028,"collectionTime":18.299999982118607,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":36336.148,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":36348.665,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":36348.694,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":36348.701,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[68,9]],"viewport":{"width":1280,"height":720},"timestamp":36868.485,"wallTime":1791404296565,"collectionTime":8.300000011920929,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":36869.064,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":36872.434,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":36872.477,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":36872.493,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[69,9]],"viewport":{"width":1280,"height":720},"timestamp":37383.332,"wallTime":1791404297079,"collectionTime":4.199999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":37383.733,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":37386.366,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":37386.396,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":37386.404,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[70,9]],"viewport":{"width":1280,"height":720},"timestamp":37898.076,"wallTime":1791404297594,"collectionTime":6.299999982118607,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":37898.528,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":37901.77,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":37901.811,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":37901.823,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[71,9]],"viewport":{"width":1280,"height":720},"timestamp":38409.465,"wallTime":1791404298106,"collectionTime":2.199999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":38409.968,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":38412.529,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":38412.558,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":38412.565,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[72,9]],"viewport":{"width":1280,"height":720},"timestamp":38931.348,"wallTime":1791404298627,"collectionTime":13.099999994039536,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":38931.895,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":38934.704,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":38934.728,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":38934.734,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[73,9]],"viewport":{"width":1280,"height":720},"timestamp":39440.752,"wallTime":1791404299137,"collectionTime":1.300000011920929,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":39441.117,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":39443.921,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":39443.948,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":39443.954,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[74,9]],"viewport":{"width":1280,"height":720},"timestamp":39950.417,"wallTime":1791404299647,"collectionTime":1.4000000059604645,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":39950.783,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":39954.077,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":39954.105,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":39954.11,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[75,9]],"viewport":{"width":1280,"height":720},"timestamp":40460.684,"wallTime":1791404300157,"collectionTime":1.800000011920929,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":40460.979,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":40463.371,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":40463.393,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":40463.401,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[76,9]],"viewport":{"width":1280,"height":720},"timestamp":40974.136,"wallTime":1791404300670,"collectionTime":5.9000000059604645,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":40974.641,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":40977.549,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":40977.58,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":40977.589,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[77,9]],"viewport":{"width":1280,"height":720},"timestamp":41483.429,"wallTime":1791404301180,"collectionTime":1.399999976158142,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":41483.812,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":41485.915,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":41485.94,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":41485.946,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[78,9]],"viewport":{"width":1280,"height":720},"timestamp":41992.334,"wallTime":1791404301689,"collectionTime":1.7999999821186066,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":41992.614,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":41994.268,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":41994.281,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":41994.288,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[79,9]],"viewport":{"width":1280,"height":720},"timestamp":42500.805,"wallTime":1791404302197,"collectionTime":2.5999999940395355,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":42501.126,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":42503.099,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":42503.121,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":42503.127,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[80,9]],"viewport":{"width":1280,"height":720},"timestamp":43007.744,"wallTime":1791404302705,"collectionTime":1,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":43008.03,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":43009.656,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":43009.67,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":43009.674,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[81,9]],"viewport":{"width":1280,"height":720},"timestamp":43524.79,"wallTime":1791404303220,"collectionTime":2.699999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":43525.155,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":43529.369,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":43529.4,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":43529.408,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[82,9]],"viewport":{"width":1280,"height":720},"timestamp":44072.443,"wallTime":1791404303769,"collectionTime":31.5,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":44072.891,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":44090.644,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":44090.758,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":44090.769,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[83,9]],"viewport":{"width":1280,"height":720},"timestamp":44598.027,"wallTime":1791404304294,"collectionTime":1.5,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":44598.554,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":44601.297,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":44601.328,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":44601.338,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[84,9]],"viewport":{"width":1280,"height":720},"timestamp":45109.149,"wallTime":1791404304806,"collectionTime":2.699999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":45109.6,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":45113.185,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":45113.235,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":45113.247,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[85,9]],"viewport":{"width":1280,"height":720},"timestamp":45619.803,"wallTime":1791404305316,"collectionTime":1.5,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":45620.071,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":45622.381,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":45622.404,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":45622.409,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[86,9]],"viewport":{"width":1280,"height":720},"timestamp":46134.472,"wallTime":1791404305831,"collectionTime":3.5,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":46134.953,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":46140.108,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":46140.137,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":46140.145,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[87,9]],"viewport":{"width":1280,"height":720},"timestamp":46690.598,"wallTime":1791404306386,"collectionTime":26.700000017881393,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":46691.085,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":46712.905,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":46712.937,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":46712.945,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[88,9]],"viewport":{"width":1280,"height":720},"timestamp":47230.026,"wallTime":1791404306926,"collectionTime":2.2000000178813934,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":47230.586,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":47240.161,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":47240.209,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":47240.22,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[89,9]],"viewport":{"width":1280,"height":720},"timestamp":47750.116,"wallTime":1791404307446,"collectionTime":2.199999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":47750.322,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":47753.32,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":47753.345,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":47753.351,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[90,9]],"viewport":{"width":1280,"height":720},"timestamp":48260.953,"wallTime":1791404307957,"collectionTime":3,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":48261.291,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":48264.086,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":48264.116,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":48264.123,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[91,9]],"viewport":{"width":1280,"height":720},"timestamp":48775.001,"wallTime":1791404308471,"collectionTime":4.299999982118607,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":48775.414,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":48777.998,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":48778.02,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":48778.025,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[92,9]],"viewport":{"width":1280,"height":720},"timestamp":49285.781,"wallTime":1791404308982,"collectionTime":1.7999999821186066,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":49286.144,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":49288.899,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":49288.931,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":49288.942,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[93,9]],"viewport":{"width":1280,"height":720},"timestamp":49818.546,"wallTime":1791404309515,"collectionTime":13.099999994039536,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":49819.038,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":49823.085,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":49823.118,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":49823.128,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[94,9]],"viewport":{"width":1280,"height":720},"timestamp":50338.177,"wallTime":1791404310035,"collectionTime":1.5999999940395355,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":50338.613,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":50342.129,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":50342.164,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":50342.174,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[95,9]],"viewport":{"width":1280,"height":720},"timestamp":50862.666,"wallTime":1791404310559,"collectionTime":3.5,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":50863.361,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":50870.681,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":50870.715,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":50870.725,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[96,9]],"viewport":{"width":1280,"height":720},"timestamp":51412.149,"wallTime":1791404311104,"collectionTime":1.7999999821186066,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":51412.491,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":51417.856,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":51417.897,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":51417.907,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[97,9]],"viewport":{"width":1280,"height":720},"timestamp":51944.66,"wallTime":1791404311641,"collectionTime":18.599999994039536,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":51944.991,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":51949.978,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":51950.01,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":51950.019,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[98,9]],"viewport":{"width":1280,"height":720},"timestamp":52469.328,"wallTime":1791404312166,"collectionTime":9.900000005960464,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":52469.848,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":52473.053,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":52473.081,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":52473.088,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[99,9]],"viewport":{"width":1280,"height":720},"timestamp":52984.927,"wallTime":1791404312681,"collectionTime":1.5999999940395355,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":52985.265,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":52987.583,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":52987.605,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":52987.612,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[100,9]],"viewport":{"width":1280,"height":720},"timestamp":53495.849,"wallTime":1791404313192,"collectionTime":2,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":53496.418,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":53500.932,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":53500.969,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":53500.983,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[101,9]],"viewport":{"width":1280,"height":720},"timestamp":54023.181,"wallTime":1791404313718,"collectionTime":7.800000011920929,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":54023.768,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":54028.203,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":54028.235,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":54028.242,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[102,9]],"viewport":{"width":1280,"height":720},"timestamp":54537.045,"wallTime":1791404314233,"collectionTime":2.800000011920929,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":54537.468,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":54544.339,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":54544.368,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":54544.376,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[103,9]],"viewport":{"width":1280,"height":720},"timestamp":55050.83,"wallTime":1791404314747,"collectionTime":1.4000000059604645,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":55051.301,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":55053.56,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":55053.583,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":55053.596,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[104,9]],"viewport":{"width":1280,"height":720},"timestamp":55571.72,"wallTime":1791404315267,"collectionTime":7.5,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":55572.123,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":55575.7,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":55575.728,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":55575.735,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[105,9]],"viewport":{"width":1280,"height":720},"timestamp":56089.66,"wallTime":1791404315786,"collectionTime":2,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":56090.111,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":56099.304,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":56099.343,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":56099.352,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[106,9]],"viewport":{"width":1280,"height":720},"timestamp":56607.664,"wallTime":1791404316304,"collectionTime":1.699999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":56607.998,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":56610.637,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":56610.666,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":56610.673,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[107,9]],"viewport":{"width":1280,"height":720},"timestamp":57116.688,"wallTime":1791404316813,"collectionTime":1.5,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":57116.983,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":57119.459,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":57119.497,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":57119.507,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[108,9]],"viewport":{"width":1280,"height":720},"timestamp":57635.767,"wallTime":1791404317332,"collectionTime":1.7999999821186066,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":57635.944,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":57641.224,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":57641.254,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":57641.261,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[109,9]],"viewport":{"width":1280,"height":720},"timestamp":58155.276,"wallTime":1791404317850,"collectionTime":1.5,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":58155.513,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":58168.255,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":58168.29,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":58168.297,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[110,9]],"viewport":{"width":1280,"height":720},"timestamp":58684.674,"wallTime":1791404318379,"collectionTime":1.800000011920929,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":58685.399,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":58689.944,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":58689.975,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":58689.983,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[111,9]],"viewport":{"width":1280,"height":720},"timestamp":59217.101,"wallTime":1791404318914,"collectionTime":19.700000017881393,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":59217.481,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":59225.911,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":59225.947,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":59225.955,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[112,9]],"viewport":{"width":1280,"height":720},"timestamp":59736.372,"wallTime":1791404319433,"collectionTime":1.2999999821186066,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":59736.67,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":59738.831,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":59738.85,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":59738.855,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[113,9]],"viewport":{"width":1280,"height":720},"timestamp":60251.971,"wallTime":1791404319946,"collectionTime":2,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":60252.474,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":60259.559,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":60259.653,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":60259.662,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[114,9]],"viewport":{"width":1280,"height":720},"timestamp":60768.047,"wallTime":1791404320464,"collectionTime":1.5999999940395355,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":60768.226,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":60770.807,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":60770.837,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":60770.86,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[115,9]],"viewport":{"width":1280,"height":720},"timestamp":61276.331,"wallTime":1791404320973,"collectionTime":1.100000023841858,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":61276.666,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":61278.821,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":61278.844,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":61278.861,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[116,9]],"viewport":{"width":1280,"height":720},"timestamp":61786.468,"wallTime":1791404321483,"collectionTime":2.199999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":61786.95,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":61790.032,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":61790.061,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":61790.069,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[117,9]],"viewport":{"width":1280,"height":720},"timestamp":62296.388,"wallTime":1791404321993,"collectionTime":1.300000011920929,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":62296.83,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":62300.498,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":62300.843,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":62300.87,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[118,9]],"viewport":{"width":1280,"height":720},"timestamp":62806.931,"wallTime":1791404322504,"collectionTime":1.4000000059604645,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":62807.176,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":62811.924,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":62811.996,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":62812.006,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[119,9]],"viewport":{"width":1280,"height":720},"timestamp":63318.734,"wallTime":1791404323015,"collectionTime":1.4000000059604645,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":63319.126,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":63321.825,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":63321.849,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":63321.858,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[120,9]],"viewport":{"width":1280,"height":720},"timestamp":63828.477,"wallTime":1791404323525,"collectionTime":2.5,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":63828.833,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":63831.312,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":63831.34,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":63831.415,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[121,9]],"viewport":{"width":1280,"height":720},"timestamp":64336.829,"wallTime":1791404324033,"collectionTime":1.5,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":64337.241,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":64340.869,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":64340.897,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":64340.912,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[122,9]],"viewport":{"width":1280,"height":720},"timestamp":64851.189,"wallTime":1791404324545,"collectionTime":3.699999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":64851.373,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":64860.425,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":64860.472,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":64860.478,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[123,9]],"viewport":{"width":1280,"height":720},"timestamp":65373.289,"wallTime":1791404325063,"collectionTime":1.199999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":65373.837,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":65385.495,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":65385.573,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":65385.581,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[124,9]],"viewport":{"width":1280,"height":720},"timestamp":65904.004,"wallTime":1791404325590,"collectionTime":1.0999999940395355,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":65904.612,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":65915.487,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":65915.512,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":65915.516,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[125,9]],"viewport":{"width":1280,"height":720},"timestamp":66423.918,"wallTime":1791404326119,"collectionTime":1.800000011920929,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":66426.118,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":66434.372,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":66434.397,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":66434.501,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[126,9]],"viewport":{"width":1280,"height":720},"timestamp":66940.983,"wallTime":1791404325704,"collectionTime":1.4000000059604645,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":66941.238,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":66947.472,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":66947.502,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":66947.508,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[127,9]],"viewport":{"width":1280,"height":720},"timestamp":67452.545,"wallTime":1791404326215,"collectionTime":0.7999999821186066,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":67452.858,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":67455.182,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":67455.213,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":67455.219,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[128,9]],"viewport":{"width":1280,"height":720},"timestamp":67972.761,"wallTime":1791404326723,"collectionTime":1.199999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":67973.329,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":67983.827,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":67983.844,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":67983.851,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[129,9]],"viewport":{"width":1280,"height":720},"timestamp":68497.915,"wallTime":1791404327252,"collectionTime":1,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":68498.589,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":68511.119,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":68511.142,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":68511.145,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[130,9]],"viewport":{"width":1280,"height":720},"timestamp":69029.958,"wallTime":1791404327782,"collectionTime":1.5,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":69030.499,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":69034.789,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":69034.814,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":69034.819,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[131,9]],"viewport":{"width":1280,"height":720},"timestamp":69539.777,"wallTime":1791404328303,"collectionTime":0.8999999761581421,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":69540.033,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":69541.894,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":69541.912,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":69541.921,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[132,9]],"viewport":{"width":1280,"height":720},"timestamp":70045.791,"wallTime":1791404328809,"collectionTime":0.9000000059604645,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":70045.955,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":70047.211,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":70047.219,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":70047.224,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[133,9]],"viewport":{"width":1280,"height":720},"timestamp":70553.102,"wallTime":1791404329316,"collectionTime":1.300000011920929,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":70553.368,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":70555.483,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":70555.507,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":70555.512,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[134,9]],"viewport":{"width":1280,"height":720},"timestamp":71077.497,"wallTime":1791404329826,"collectionTime":1,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":71077.732,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":71093.125,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":71093.553,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":71093.568,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[135,9]],"viewport":{"width":1280,"height":720},"timestamp":71601.174,"wallTime":1791404330364,"collectionTime":1.4000000059604645,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":71601.428,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":71603.523,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":71603.554,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":71603.559,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[136,9]],"viewport":{"width":1280,"height":720},"timestamp":72109.45,"wallTime":1791404330872,"collectionTime":1.399999976158142,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":72109.713,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":72111.931,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":72111.961,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":72111.966,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[137,9]],"viewport":{"width":1280,"height":720},"timestamp":72618.838,"wallTime":1791404331381,"collectionTime":1.7000000178813934,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":72619.207,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":72621.436,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":72621.469,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":72621.474,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[138,9]],"viewport":{"width":1280,"height":720},"timestamp":73133.812,"wallTime":1791404331890,"collectionTime":1.0999999940395355,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":73134.282,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":73141.482,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":73141.506,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":73141.891,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[139,9]],"viewport":{"width":1280,"height":720},"timestamp":73652.444,"wallTime":1791404332415,"collectionTime":4,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":73653.763,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":73670.533,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":73670.558,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":73670.563,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[140,9]],"viewport":{"width":1280,"height":720},"timestamp":74190.073,"wallTime":1791404332946,"collectionTime":4.300000011920929,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":74191.23,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":74213.109,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":74213.794,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":74213.833,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[141,9]],"viewport":{"width":1280,"height":720},"timestamp":74729.937,"wallTime":1791404333486,"collectionTime":1.699999988079071,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":74731.093,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":74746.275,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":74746.315,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":74746.705,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[142,9]],"viewport":{"width":1280,"height":720},"timestamp":75256.332,"wallTime":1791404334019,"collectionTime":1.399999976158142,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":75256.629,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":75259.628,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":75259.653,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":75259.658,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[143,9]],"viewport":{"width":1280,"height":720},"timestamp":75764.514,"wallTime":1791404334527,"collectionTime":0.7999999821186066,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":75764.753,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":75771.895,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":75771.916,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":75771.985,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[144,9]],"viewport":{"width":1280,"height":720},"timestamp":76284.816,"wallTime":1791404335043,"collectionTime":1.600000023841858,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":76284.995,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":76287.473,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":76287.491,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":76287.495,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[145,9]],"viewport":{"width":1280,"height":720},"timestamp":76793.655,"wallTime":1791404335556,"collectionTime":1.4000000059604645,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":76793.995,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":76796.087,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":76796.107,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":76796.111,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[146,9]],"viewport":{"width":1280,"height":720},"timestamp":77304.918,"wallTime":1791404336067,"collectionTime":4.5999999940395355,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":77306.305,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":77314.072,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":77314.095,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":77314.099,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[147,9]],"viewport":{"width":1280,"height":720},"timestamp":77821.249,"wallTime":1791404336584,"collectionTime":1,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":77821.595,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":77829.538,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":77829.624,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":77829.634,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[148,9]],"viewport":{"width":1280,"height":720},"timestamp":78338.553,"wallTime":1791404337099,"collectionTime":1.2999999821186066,"resourceOverrides":[],"isMainFrame":true}}
+{"type":"log","callId":"call@31","time":78340.091,"message":"  waiting for element to be visible and enabled"}
+{"type":"log","callId":"call@31","time":78356.754,"message":"  did not find some options"}
+{"type":"log","callId":"call@31","time":78356.798,"message":"retrying select option action"}
+{"type":"log","callId":"call@31","time":78356.807,"message":"  waiting 500ms"}
+{"type":"input","callId":"call@31","inputSnapshot":"input@call@31"}
+{"type":"frame-snapshot","snapshot":{"callId":"call@31","snapshotName":"input@call@31","pageId":"page@d9e37122c854193f7003c6c44bf8096c","frameId":"frame@faa550fcbb204429b0c95e5cf7ea8e5c","frameUrl":"https://c4c-admin.lab.tasso.dev.br/admin/acessos","doctype":"html","html":[[149,9]],"viewport":{"width":1280,"height":720},"timestamp":78866.978,"wallTime":1791404337627,"collectionTime":1.399999976158142,"resourceOverrides":[],"isMainFrame":true}}

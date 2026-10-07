@@ -1,0 +1,5 @@
+EXATO=ct-17 | x-death: rejected
+EXATO=ct-18 | x-death: rejected
+EXATO=ct-19 | x-death: rejected
+EXATO=ct-20 | x-death: rejected
+TOTAL: 4 de 4, todas idênticas ao publicado

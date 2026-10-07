@@ -1,0 +1,26 @@
+{
+  "session": "qa-cap030-trilha-auditoria-2026-10-07",
+  "broker": "192.168.0.5:15672 / vhost code-for-coders / exchange audit.events / routing_key auditoria.ato-praticado.v1",
+  "tenants": {
+    "T_A": "11111111-1111-4111-8111-111111111111",
+    "T_B": "22222222-2222-4222-8222-222222222222"
+  },
+  "fato_ids": {
+    "CT-06": "3be49f92-7c24-4159-a99f-7b081f382be8",
+    "CT-07a": "52328089-d9e8-44be-be97-55d83f489c28",
+    "CT-07b": "d40871c2-020c-41fb-94a4-6133b9706ae3",
+    "CT-08": "e786b693-671a-4e17-b117-88558bfbff26",
+    "CT-09": "e9090064-27b2-4bf5-8da3-51bf8c282d4f",
+    "CT-10": "5fa9d407-88f0-4e88-8477-fae2a379b890",
+    "CT-11": "8c74f8c7-0a7d-4840-bc32-6f59a8e30cb7",
+    "CT-12": "d223f879-3ec6-4d8b-956d-3b3ec1a86adc",
+    "CT-13": "06bad697-f088-4aed-a1c0-7209508bc41c",
+    "CT-14a": "d0b9d42d-1663-47af-8a91-0c98fb67889f",
+    "CT-14b": "77ab2685-7a4b-495b-b5af-15e42698fa39",
+    "CT-15": "2eec9a78-7003-4e62-9225-961d1d92736c",
+    "CT-16": "69dbec4b-e231-431d-89bb-24f1badb7c92",
+    "CT-18": "7d9ec6ab-b296-4532-b094-39165dc6d1b1",
+    "CT-21": "8018c059-16ef-4fca-85ed-3041de9371e9"
+  },
+  "notes": "CT-13 república o fato do CT-10 (reentrega de não conforme). CT-09 usa fato próprio com duas variantes (a original e a divergente). CT-21 usa o fato do CT-18 tornado legível."
+}

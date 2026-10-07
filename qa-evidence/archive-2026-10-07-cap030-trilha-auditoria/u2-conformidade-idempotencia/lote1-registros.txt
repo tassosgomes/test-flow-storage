@@ -1,0 +1,5 @@
+52328089-d9e8-44be-be97-55d83f489c28|papel-concedido|11111111-1111-4111-8111-111111111111|{"papel": "professor"}|Professor contratado para o curso de .NET avançado|2026-10-07 15:00:00-03|conforming|{}
+e9090064-27b2-4bf5-8da3-51bf8c282d4f|papel-concedido|11111111-1111-4111-8111-111111111111|{"papel": "professor"}|Professor contratado para o curso de .NET avançado|2026-10-07 15:00:00-03|conforming|{}
+3be49f92-7c24-4159-a99f-7b081f382be8|papel-concedido|11111111-1111-4111-8111-111111111111|{"papel": "professor"}|Professor contratado para o curso de .NET avançado|2026-10-07 15:00:00-03|conforming|{}
+d40871c2-020c-41fb-94a4-6133b9706ae3|papel-concedido|11111111-1111-4111-8111-111111111111|{"papel": "professor"}|Professor contratado para o curso de .NET avançado|2026-10-07 15:00:00-03|conforming|{}
+e786b693-671a-4e17-b117-88558bfbff26|papel-concedido|11111111-1111-4111-8111-111111111111|{"papel": "professor"}|Professor contratado para o curso de .NET avançado|2026-10-07 15:00:00-03|conforming|{}

@@ -1,0 +1,29 @@
+{
+  "session": {
+    "id": "qa-cap001-conta-aluno-2026-10-07",
+    "started_at": "2026-10-07T13:36:17Z",
+    "artifact_under_test": "tasks/archive/prd-conta-aluno (PRD v1.1, CAP-001, RF-01 a RF-06)",
+    "environment": {
+      "student_spa": "https://c4c-student.lab.tasso.dev.br/student",
+      "admin_spa": "https://c4c-admin.lab.tasso.dev.br/admin",
+      "bff_student_base": "https://c4c-student.lab.tasso.dev.br/api/v1",
+      "smtp_webui": "https://smtp.tasso.dev.br",
+      "postgres": "host 192.168.0.5, db code_for_coders_identity, schema identity_access"
+    },
+    "credentials_ref": {
+      "smtp_basic_auth": "SMTP4DEV_USERNAME / SMTP4DEV_PASSWORD (definidas em .env local; valores nao gravados aqui)",
+      "postgres": "REMOTE_DB_PASSWORD (definida em .env local)"
+    },
+    "test_data": {
+      "email_pattern": "qa.cap001.<caso>@example.test (contas criadas e descartadas pela rodada)",
+      "valid_password_pattern": "Atende DP-05: >=8 chars, maiuscula, minuscula, digito, simbolo (espaco nao conta)"
+    },
+    "authorization": "Plano aprovado pelo usuario em 2026-10-07: execucao completa incluindo arranjo de estado via banco apenas em contas criadas pela rodada e sondagem negativa com e-mail de ator interno existente (sem mutacao)."
+  },
+  "units": [
+    { "id": "U1", "dir": "u1-cadastro-confirmacao", "cases": ["CT-01", "CT-02", "CT-03", "CT-04", "CT-05", "CT-06", "CT-07", "CT-08", "CT-09"] },
+    { "id": "U2", "dir": "u2-login-sessao", "cases": ["CT-10", "CT-11", "CT-13", "CT-14", "CT-15", "CT-16", "CT-17", "CT-18", "CT-19"] },
+    { "id": "U3", "dir": "u3-recuperacao", "cases": ["CT-20", "CT-21", "CT-22", "CT-23", "CT-24", "CT-25"] },
+    { "id": "U4", "dir": "u4-troca-senha", "cases": ["CT-26", "CT-27", "CT-28", "CT-29"] }
+  ]
+}

@@ -1,0 +1,1 @@
+entregue_para=QA.Cap002.Normalizado@Example.TEST

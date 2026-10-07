@@ -1,0 +1,28 @@
+#11 [POST] https://c4c-admin.lab.tasso.dev.br/api/v1/staff-members/01a117f4-20a7-761f-86b5-2ad51c4f99fe/role-grants
+
+  General
+    status:    [200] 
+    duration:  151ms
+    type:      xhr
+    mimeType:  application/json
+
+  Request headers
+    sec-ch-ua-platform: "Linux"
+    x-csrf-token: tsFLYkhPSno0JjWI9EQJcJbQ40Ba8ftdoUIuWqhz2mc
+    referer: https://c4c-admin.lab.tasso.dev.br/admin/acessos
+    idempotency-key: d25ff0ba-ad33-446a-8b4c-1981ca455e69
+    sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"
+    sec-ch-ua-mobile: ?0
+    user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36
+    accept: application/json
+    content-type: application/json
+
+  Response headers
+    content-encoding: gzip
+    date: Wed, 07 Oct 2026 20:08:31 GMT
+    content-type: application/json; charset=utf-8
+    vary: Accept-Encoding
+    server: nginx/1.31.6
+
+Call browser_network_request with part="request-body" to read the request body.
+Call browser_network_request with part="response-body" to read the response body.

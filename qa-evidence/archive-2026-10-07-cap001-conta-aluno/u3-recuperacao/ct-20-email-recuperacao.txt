@@ -1,0 +1,12 @@
+Oi, QA!
+
+Recebemos um pedido para criar uma nova senha para sua conta.
+
+Criar nova senha:
+https://c4c-student.lab.tasso.dev.br/student/redefinir-senha?token=tlwTZ95B71leoJcfhIYkP4n-foGksRxLKLexVd9naRY
+
+O link vale por 1 hora e só funciona uma vez.
+
+Não pediu? Ignore este e-mail — sua senha continua a mesma.
+
+Code4Coders · e-mail automático

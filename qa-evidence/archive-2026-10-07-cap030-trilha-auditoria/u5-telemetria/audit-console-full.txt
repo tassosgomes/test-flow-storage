@@ -1,0 +1,826 @@
+2026-10-07T14:39:47.960814780Z warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+2026-10-07T14:39:47.960879532Z       Storing keys in a directory '/home/app/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-10-07T14:39:48.497116621Z warn: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[35]
+2026-10-07T14:39:48.497143436Z       No XML encryptor configured. Key {0128a820-ba31-4caa-913c-3c2145836485} may be persisted to storage in unencrypted form.
+2026-10-07T14:39:48.674270292Z info: Microsoft.Hosting.Lifetime[14]
+2026-10-07T14:39:48.674301345Z       Now listening on: http://[::]:8080
+2026-10-07T14:39:48.677328425Z info: Microsoft.Hosting.Lifetime[0]
+2026-10-07T14:39:48.677355184Z       Application started. Press Ctrl+C to shut down.
+2026-10-07T14:39:48.679953161Z info: Microsoft.Hosting.Lifetime[0]
+2026-10-07T14:39:48.680002743Z       Hosting environment: Development
+2026-10-07T14:39:48.680010430Z info: Microsoft.Hosting.Lifetime[0]
+2026-10-07T14:39:48.680014531Z       Content root path: /app
+2026-10-07T18:39:45.263395445Z info: CodeForCoders.Audit.Infra.Messaging.AuditEventConsumerWorker[0]
+2026-10-07T18:39:45.263428686Z       Administrative act recorded 01a117aa-0c5b-7acb-8d8c-70f5b7ffcaff identidade convite-interno-aceito 00000000-0000-7000-8000-000000000001
+2026-10-07T18:42:24.828010164Z info: CodeForCoders.Audit.Infra.Messaging.AuditEventConsumerWorker[0]
+2026-10-07T18:42:24.828080077Z       Administrative act recorded 01a117ac-823c-7db0-a17b-1d27e6717a8b identidade papel-revogado 00000000-0000-7000-8000-000000000001
+2026-10-07T18:43:47.144481559Z info: CodeForCoders.Audit.Infra.Messaging.AuditEventConsumerWorker[0]
+2026-10-07T18:43:47.144521304Z       Administrative act recorded 52328089-d9e8-44be-be97-55d83f489c28 identidade papel-concedido 11111111-1111-4111-8111-111111111111
+2026-10-07T18:43:47.149607165Z info: CodeForCoders.Audit.Infra.Messaging.AuditEventConsumerWorker[0]
+2026-10-07T18:43:47.149640440Z       Administrative act recorded e9090064-27b2-4bf5-8da3-51bf8c282d4f identidade papel-concedido 11111111-1111-4111-8111-111111111111
+2026-10-07T18:43:47.264834786Z fail: Microsoft.EntityFrameworkCore.Database.Command[20102]
+2026-10-07T18:43:47.264889067Z       Failed executing DbCommand (17ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?', @p3='?' (DbType = Object), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?' (DbType = Guid), @p9='?', @p10='?', @p11='?' (DbType = Guid), @p12='?' (DbType = DateTime), @p13='?', @p14='?' (DbType = Object), @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Guid), @p18='?', @p19='?' (DbType = Guid), @p20='?'], CommandType='Text', CommandTimeout='30']
+2026-10-07T18:43:47.264903588Z       INSERT INTO audit_access.audit_records (id, autor_id, autor_tipo, complemento, confirmation_id, confirmed_at, conformidade, explanation, fato_id, impressao_digital, origem, original_record_id, praticado_em, motivo, razoes, recebido_em, record_type, alvo_id, alvo_tipo, tenant_id, tipo)
+2026-10-07T18:43:47.264943852Z       VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2026-10-07T18:43:47.317039884Z fail: Microsoft.EntityFrameworkCore.Update[10000]
+2026-10-07T18:43:47.317079673Z       An exception occurred in the database while saving changes for context type 'CodeForCoders.Audit.Infra.Data.AuditDbContext'.
+2026-10-07T18:43:47.317089917Z       Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+2026-10-07T18:43:47.317095329Z        ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:43:47.317101065Z       
+2026-10-07T18:43:47.317105412Z       DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:43:47.317110404Z          at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+2026-10-07T18:43:47.317115461Z          at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+2026-10-07T18:43:47.317120773Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317125415Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317130123Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317134754Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317139393Z          at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317144528Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317153302Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317164806Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317170465Z         Exception data:
+2026-10-07T18:43:47.317174709Z           Severity: ERROR
+2026-10-07T18:43:47.317178935Z           SqlState: 23505
+2026-10-07T18:43:47.317183303Z           MessageText: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:43:47.317191668Z           Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:43:47.317212604Z           SchemaName: audit_access
+2026-10-07T18:43:47.317217567Z           TableName: audit_records
+2026-10-07T18:43:47.317221828Z           ConstraintName: ux_audit_records_origem_fato_id
+2026-10-07T18:43:47.317226706Z           File: nbtinsert.c
+2026-10-07T18:43:47.317234431Z           Line: 666
+2026-10-07T18:43:47.317242144Z           Routine: _bt_check_unique
+2026-10-07T18:43:47.317249927Z          --- End of inner exception stack trace ---
+2026-10-07T18:43:47.317255182Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317260148Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317265008Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317269848Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317274736Z          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317279481Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317284249Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317290111Z          at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317295171Z          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317299848Z       Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+2026-10-07T18:43:47.317304719Z        ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:43:47.317309928Z       
+2026-10-07T18:43:47.317317133Z       DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:43:47.317325922Z          at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+2026-10-07T18:43:47.317333814Z          at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+2026-10-07T18:43:47.317344697Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317349519Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317354101Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317358749Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317363340Z          at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317368122Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317372973Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317378867Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317383815Z         Exception data:
+2026-10-07T18:43:47.317388037Z           Severity: ERROR
+2026-10-07T18:43:47.317392822Z           SqlState: 23505
+2026-10-07T18:43:47.317400774Z           MessageText: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:43:47.317409288Z           Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:43:47.317416834Z           SchemaName: audit_access
+2026-10-07T18:43:47.317421301Z           TableName: audit_records
+2026-10-07T18:43:47.317425646Z           ConstraintName: ux_audit_records_origem_fato_id
+2026-10-07T18:43:47.317430047Z           File: nbtinsert.c
+2026-10-07T18:43:47.317434386Z           Line: 666
+2026-10-07T18:43:47.317438744Z           Routine: _bt_check_unique
+2026-10-07T18:43:47.317443023Z          --- End of inner exception stack trace ---
+2026-10-07T18:43:47.317447373Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317452155Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317456989Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317461780Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317472038Z          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317478994Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317487694Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317497331Z          at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2026-10-07T18:43:47.317502709Z          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:43:47.608168397Z info: CodeForCoders.Audit.Infra.Messaging.AuditEventConsumerWorker[0]
+2026-10-07T18:43:47.608202857Z       Administrative act recorded e786b693-671a-4e17-b117-88558bfbff26 identidade papel-concedido 11111111-1111-4111-8111-111111111111
+2026-10-07T18:44:19.203866095Z warn: CodeForCoders.Audit.Application.UseCases.Audit.RecordAdministrativeAct.RecordAdministrativeAct[0]
+2026-10-07T18:44:19.203909223Z       Non-conforming administrative act recorded 5fa9d407-88f0-4e88-8477-fae2a379b890 identidade papel-revogado motivo-ausente
+2026-10-07T18:44:19.203917886Z info: CodeForCoders.Audit.Infra.Messaging.AuditEventConsumerWorker[0]
+2026-10-07T18:44:19.203923701Z       Administrative act recorded 5fa9d407-88f0-4e88-8477-fae2a379b890 identidade papel-revogado 11111111-1111-4111-8111-111111111111
+2026-10-07T18:44:19.299733024Z warn: CodeForCoders.Audit.Application.UseCases.Audit.RecordAdministrativeAct.RecordAdministrativeAct[0]
+2026-10-07T18:44:19.299862638Z       Non-conforming administrative act recorded d223f879-3ec6-4d8b-956d-3b3ec1a86adc identidade papel-alterado tipo-desconhecido
+2026-10-07T18:44:19.299887289Z info: CodeForCoders.Audit.Infra.Messaging.AuditEventConsumerWorker[0]
+2026-10-07T18:44:19.299904434Z       Administrative act recorded d223f879-3ec6-4d8b-956d-3b3ec1a86adc identidade papel-alterado 11111111-1111-4111-8111-111111111111
+2026-10-07T18:44:19.352833391Z info: CodeForCoders.Audit.Infra.Messaging.AuditEventConsumerWorker[0]
+2026-10-07T18:44:19.352908860Z       Administrative act recorded 77ab2685-7a4b-495b-b5af-15e42698fa39 identidade papel-concedido 22222222-2222-4222-8222-222222222222
+2026-10-07T18:44:19.423528284Z warn: CodeForCoders.Audit.Application.UseCases.Audit.RecordAdministrativeAct.RecordAdministrativeAct[0]
+2026-10-07T18:44:19.423564394Z       Non-conforming administrative act recorded 69dbec4b-e231-431d-89bb-24f1badb7c92 identidade papel-concedido momento-ausente
+2026-10-07T18:44:19.423587866Z info: CodeForCoders.Audit.Infra.Messaging.AuditEventConsumerWorker[0]
+2026-10-07T18:44:19.423596367Z       Administrative act recorded 69dbec4b-e231-431d-89bb-24f1badb7c92 identidade papel-concedido 11111111-1111-4111-8111-111111111111
+2026-10-07T18:52:45.984393493Z fail: CodeForCoders.Audit.Infra.Messaging.AuditEventConsumerWorker[0]
+2026-10-07T18:52:45.984439579Z       Unreadable administrative act sent to the dead-letter queue. Reason body
+2026-10-07T18:52:46.070868032Z fail: CodeForCoders.Audit.Infra.Messaging.AuditEventConsumerWorker[0]
+2026-10-07T18:52:46.070913602Z       Unreadable administrative act sent to the dead-letter queue. Reason origem
+2026-10-07T18:53:56.244856926Z info: CodeForCoders.Audit.Infra.Messaging.AuditEventConsumerWorker[0]
+2026-10-07T18:53:56.244922042Z       Administrative act recorded 8018c059-16ef-4fca-85ed-3041de9371e9 identidade papel-concedido 11111111-1111-4111-8111-111111111111
+2026-10-07T18:54:49.075976040Z fail: Microsoft.EntityFrameworkCore.Database.Command[20102]
+2026-10-07T18:54:49.076032267Z       Failed executing DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?', @p3='?' (DbType = Object), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?' (DbType = Guid), @p9='?', @p10='?', @p11='?' (DbType = Guid), @p12='?' (DbType = DateTime), @p13='?', @p14='?' (DbType = Object), @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Guid), @p18='?', @p19='?' (DbType = Guid), @p20='?'], CommandType='Text', CommandTimeout='30']
+2026-10-07T18:54:49.076053097Z       INSERT INTO audit_access.audit_records (id, autor_id, autor_tipo, complemento, confirmation_id, confirmed_at, conformidade, explanation, fato_id, impressao_digital, origem, original_record_id, praticado_em, motivo, razoes, recebido_em, record_type, alvo_id, alvo_tipo, tenant_id, tipo)
+2026-10-07T18:54:49.076064959Z       VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2026-10-07T18:54:49.082834519Z fail: Microsoft.EntityFrameworkCore.Update[10000]
+2026-10-07T18:54:49.082880119Z       An exception occurred in the database while saving changes for context type 'CodeForCoders.Audit.Infra.Data.AuditDbContext'.
+2026-10-07T18:54:49.082891177Z       Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+2026-10-07T18:54:49.082899042Z        ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.082907338Z       
+2026-10-07T18:54:49.082914128Z       DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.082921694Z          at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+2026-10-07T18:54:49.082929060Z          at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+2026-10-07T18:54:49.082945159Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.082957916Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.082989206Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.082995541Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083000938Z          at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083006482Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083012146Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083021932Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083032301Z         Exception data:
+2026-10-07T18:54:49.083040837Z           Severity: ERROR
+2026-10-07T18:54:49.083049319Z           SqlState: 23505
+2026-10-07T18:54:49.083055186Z           MessageText: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.083060851Z           Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.083066613Z           SchemaName: audit_access
+2026-10-07T18:54:49.083071643Z           TableName: audit_records
+2026-10-07T18:54:49.083076589Z           ConstraintName: ux_audit_records_origem_fato_id
+2026-10-07T18:54:49.083081699Z           File: nbtinsert.c
+2026-10-07T18:54:49.083086707Z           Line: 666
+2026-10-07T18:54:49.083091590Z           Routine: _bt_check_unique
+2026-10-07T18:54:49.083096631Z          --- End of inner exception stack trace ---
+2026-10-07T18:54:49.083101803Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083110576Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083121452Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083130487Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083136395Z          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083150322Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083156201Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083162914Z          at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083168772Z          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083174290Z       Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+2026-10-07T18:54:49.083179830Z        ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.083185701Z       
+2026-10-07T18:54:49.083194008Z       DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.083204362Z          at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+2026-10-07T18:54:49.083214655Z          at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+2026-10-07T18:54:49.083221697Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083227095Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083232526Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083237993Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083243325Z          at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083248708Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083254919Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083262092Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083267712Z         Exception data:
+2026-10-07T18:54:49.083274090Z           Severity: ERROR
+2026-10-07T18:54:49.083292839Z           SqlState: 23505
+2026-10-07T18:54:49.083302275Z           MessageText: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.083308566Z           Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.083314117Z           SchemaName: audit_access
+2026-10-07T18:54:49.083319263Z           TableName: audit_records
+2026-10-07T18:54:49.083324289Z           ConstraintName: ux_audit_records_origem_fato_id
+2026-10-07T18:54:49.083329425Z           File: nbtinsert.c
+2026-10-07T18:54:49.083334374Z           Line: 666
+2026-10-07T18:54:49.083339269Z           Routine: _bt_check_unique
+2026-10-07T18:54:49.083344291Z          --- End of inner exception stack trace ---
+2026-10-07T18:54:49.083349452Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083355062Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083362862Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083373337Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083384242Z          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083390682Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083396284Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083403154Z          at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2026-10-07T18:54:49.083409015Z          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.098684288Z warn: CodeForCoders.Audit.Application.UseCases.Audit.RecordAdministrativeAct.RecordAdministrativeAct[0]
+2026-10-07T18:54:49.098744467Z       Administrative act redelivery has different content identidade 01a117aa-0c5b-7acb-8d8c-70f5b7ffcaff 73a8977d9fc19dad8bc9e88cf0f29de63d47181e0ac9c60161926b0a4f4d3ddf e8fba15896401a87dadce6bd0c7d5d277f54ef1a255e210da19ff7a2d448f29b
+2026-10-07T18:54:49.098762811Z info: CodeForCoders.Audit.Infra.Messaging.AuditEventConsumerWorker[0]
+2026-10-07T18:54:49.098774237Z       Administrative act recorded 01a117aa-0c5b-7acb-8d8c-70f5b7ffcaff identidade convite-interno-aceito 00000000-0000-7000-8000-000000000001
+2026-10-07T18:54:49.151946553Z fail: Microsoft.EntityFrameworkCore.Database.Command[20102]
+2026-10-07T18:54:49.152001244Z       Failed executing DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?', @p3='?' (DbType = Object), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?' (DbType = Guid), @p9='?', @p10='?', @p11='?' (DbType = Guid), @p12='?' (DbType = DateTime), @p13='?', @p14='?' (DbType = Object), @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Guid), @p18='?', @p19='?' (DbType = Guid), @p20='?'], CommandType='Text', CommandTimeout='30']
+2026-10-07T18:54:49.152016875Z       INSERT INTO audit_access.audit_records (id, autor_id, autor_tipo, complemento, confirmation_id, confirmed_at, conformidade, explanation, fato_id, impressao_digital, origem, original_record_id, praticado_em, motivo, razoes, recebido_em, record_type, alvo_id, alvo_tipo, tenant_id, tipo)
+2026-10-07T18:54:49.152026286Z       VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2026-10-07T18:54:49.162201718Z fail: Microsoft.EntityFrameworkCore.Update[10000]
+2026-10-07T18:54:49.162240768Z       An exception occurred in the database while saving changes for context type 'CodeForCoders.Audit.Infra.Data.AuditDbContext'.
+2026-10-07T18:54:49.162250961Z       Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+2026-10-07T18:54:49.162259235Z        ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.162268461Z       
+2026-10-07T18:54:49.162275643Z       DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.162283546Z          at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+2026-10-07T18:54:49.162291540Z          at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+2026-10-07T18:54:49.162300370Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162307902Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162315429Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162322877Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162330379Z          at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162337911Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162371759Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162383170Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162391454Z         Exception data:
+2026-10-07T18:54:49.162398385Z           Severity: ERROR
+2026-10-07T18:54:49.162405402Z           SqlState: 23505
+2026-10-07T18:54:49.162412327Z           MessageText: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.162420216Z           Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.162427873Z           SchemaName: audit_access
+2026-10-07T18:54:49.162435431Z           TableName: audit_records
+2026-10-07T18:54:49.162442542Z           ConstraintName: ux_audit_records_origem_fato_id
+2026-10-07T18:54:49.162449628Z           File: nbtinsert.c
+2026-10-07T18:54:49.162456499Z           Line: 666
+2026-10-07T18:54:49.162463269Z           Routine: _bt_check_unique
+2026-10-07T18:54:49.162470201Z          --- End of inner exception stack trace ---
+2026-10-07T18:54:49.162477517Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162485285Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162493103Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162501006Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162508799Z          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162516317Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162524095Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162532825Z          at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162540823Z          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162556143Z       Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+2026-10-07T18:54:49.162564051Z        ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.162572335Z       
+2026-10-07T18:54:49.162579186Z       DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.162586919Z          at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+2026-10-07T18:54:49.162594837Z          at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+2026-10-07T18:54:49.162603011Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162610568Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162617995Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162625533Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162633020Z          at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162640502Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162648295Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162657145Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162664958Z         Exception data:
+2026-10-07T18:54:49.162671899Z           Severity: ERROR
+2026-10-07T18:54:49.162678795Z           SqlState: 23505
+2026-10-07T18:54:49.162685581Z           MessageText: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.162693213Z           Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.162700806Z           SchemaName: audit_access
+2026-10-07T18:54:49.162707852Z           TableName: audit_records
+2026-10-07T18:54:49.162714803Z           ConstraintName: ux_audit_records_origem_fato_id
+2026-10-07T18:54:49.162721904Z           File: nbtinsert.c
+2026-10-07T18:54:49.162735471Z           Line: 666
+2026-10-07T18:54:49.162742482Z           Routine: _bt_check_unique
+2026-10-07T18:54:49.162749473Z          --- End of inner exception stack trace ---
+2026-10-07T18:54:49.162756564Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162764242Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162772055Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162815956Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162830539Z          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162838508Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162846295Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162855251Z          at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2026-10-07T18:54:49.162863500Z          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.169351366Z warn: CodeForCoders.Audit.Application.UseCases.Audit.RecordAdministrativeAct.RecordAdministrativeAct[0]
+2026-10-07T18:54:49.169391333Z       Administrative act redelivery has different content identidade 01a117ac-823c-7db0-a17b-1d27e6717a8b 3d22cc854a0a83c06187b87584c1a6224d94b56f4bc8bfe76f13338f39bb5838 4ad0e636b9d114b9e1f793e19fc86b56288c0ac5e334209cdeb10c58e1cfd0dc
+2026-10-07T18:54:49.169401892Z info: CodeForCoders.Audit.Infra.Messaging.AuditEventConsumerWorker[0]
+2026-10-07T18:54:49.169409865Z       Administrative act recorded 01a117ac-823c-7db0-a17b-1d27e6717a8b identidade papel-revogado 00000000-0000-7000-8000-000000000001
+2026-10-07T18:54:49.232749339Z fail: Microsoft.EntityFrameworkCore.Database.Command[20102]
+2026-10-07T18:54:49.232820026Z       Failed executing DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?', @p3='?' (DbType = Object), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?' (DbType = Guid), @p9='?', @p10='?', @p11='?' (DbType = Guid), @p12='?' (DbType = DateTime), @p13='?', @p14='?' (DbType = Object), @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Guid), @p18='?', @p19='?' (DbType = Guid), @p20='?'], CommandType='Text', CommandTimeout='30']
+2026-10-07T18:54:49.232878190Z       INSERT INTO audit_access.audit_records (id, autor_id, autor_tipo, complemento, confirmation_id, confirmed_at, conformidade, explanation, fato_id, impressao_digital, origem, original_record_id, praticado_em, motivo, razoes, recebido_em, record_type, alvo_id, alvo_tipo, tenant_id, tipo)
+2026-10-07T18:54:49.232891055Z       VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2026-10-07T18:54:49.242199176Z fail: Microsoft.EntityFrameworkCore.Update[10000]
+2026-10-07T18:54:49.242256227Z       An exception occurred in the database while saving changes for context type 'CodeForCoders.Audit.Infra.Data.AuditDbContext'.
+2026-10-07T18:54:49.242279376Z       Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+2026-10-07T18:54:49.242288772Z        ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.242297999Z       
+2026-10-07T18:54:49.242305095Z       DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.242313178Z          at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+2026-10-07T18:54:49.242321162Z          at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+2026-10-07T18:54:49.242329812Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242337409Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242344907Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242352348Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242359861Z          at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242367438Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242375266Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242385851Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242393774Z         Exception data:
+2026-10-07T18:54:49.242400680Z           Severity: ERROR
+2026-10-07T18:54:49.242407911Z           SqlState: 23505
+2026-10-07T18:54:49.242414968Z           MessageText: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.242446154Z           Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.242454934Z           SchemaName: audit_access
+2026-10-07T18:54:49.242462026Z           TableName: audit_records
+2026-10-07T18:54:49.242469012Z           ConstraintName: ux_audit_records_origem_fato_id
+2026-10-07T18:54:49.242476138Z           File: nbtinsert.c
+2026-10-07T18:54:49.242483049Z           Line: 666
+2026-10-07T18:54:49.242489850Z           Routine: _bt_check_unique
+2026-10-07T18:54:49.242496786Z          --- End of inner exception stack trace ---
+2026-10-07T18:54:49.242503877Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242511670Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242519603Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242527587Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242535409Z          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242543027Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242550680Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242559936Z          at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242567994Z          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242575572Z       Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+2026-10-07T18:54:49.242583219Z        ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.242591258Z       
+2026-10-07T18:54:49.242597993Z       DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.242605746Z          at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+2026-10-07T18:54:49.242620791Z          at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+2026-10-07T18:54:49.242629210Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242636718Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242644250Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242651857Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242659254Z          at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242666762Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242674549Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242683530Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242698430Z         Exception data:
+2026-10-07T18:54:49.242705486Z           Severity: ERROR
+2026-10-07T18:54:49.242712352Z           SqlState: 23505
+2026-10-07T18:54:49.242719197Z           MessageText: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.242726890Z           Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.242734713Z           SchemaName: audit_access
+2026-10-07T18:54:49.242741814Z           TableName: audit_records
+2026-10-07T18:54:49.242748675Z           ConstraintName: ux_audit_records_origem_fato_id
+2026-10-07T18:54:49.242755761Z           File: nbtinsert.c
+2026-10-07T18:54:49.242762682Z           Line: 666
+2026-10-07T18:54:49.242769408Z           Routine: _bt_check_unique
+2026-10-07T18:54:49.242776269Z          --- End of inner exception stack trace ---
+2026-10-07T18:54:49.242824239Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242833009Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242840907Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242857205Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242865499Z          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242873006Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242880729Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242889790Z          at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2026-10-07T18:54:49.242897973Z          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.250064725Z info: CodeForCoders.Audit.Infra.Messaging.AuditEventConsumerWorker[0]
+2026-10-07T18:54:49.250118304Z       Administrative act recorded 52328089-d9e8-44be-be97-55d83f489c28 identidade papel-concedido 11111111-1111-4111-8111-111111111111
+2026-10-07T18:54:49.316058259Z fail: Microsoft.EntityFrameworkCore.Database.Command[20102]
+2026-10-07T18:54:49.316100410Z       Failed executing DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?', @p3='?' (DbType = Object), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?' (DbType = Guid), @p9='?', @p10='?', @p11='?' (DbType = Guid), @p12='?' (DbType = DateTime), @p13='?', @p14='?' (DbType = Object), @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Guid), @p18='?', @p19='?' (DbType = Guid), @p20='?'], CommandType='Text', CommandTimeout='30']
+2026-10-07T18:54:49.316109144Z       INSERT INTO audit_access.audit_records (id, autor_id, autor_tipo, complemento, confirmation_id, confirmed_at, conformidade, explanation, fato_id, impressao_digital, origem, original_record_id, praticado_em, motivo, razoes, recebido_em, record_type, alvo_id, alvo_tipo, tenant_id, tipo)
+2026-10-07T18:54:49.316114660Z       VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2026-10-07T18:54:49.321408159Z fail: Microsoft.EntityFrameworkCore.Update[10000]
+2026-10-07T18:54:49.321443734Z       An exception occurred in the database while saving changes for context type 'CodeForCoders.Audit.Infra.Data.AuditDbContext'.
+2026-10-07T18:54:49.321453128Z       Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+2026-10-07T18:54:49.321460670Z        ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.321468771Z       
+2026-10-07T18:54:49.321498149Z       DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.321506073Z          at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+2026-10-07T18:54:49.321513273Z          at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+2026-10-07T18:54:49.321520799Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321527529Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321534180Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321541064Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321548502Z          at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321555741Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321563211Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321572459Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321580130Z         Exception data:
+2026-10-07T18:54:49.321586720Z           Severity: ERROR
+2026-10-07T18:54:49.321593252Z           SqlState: 23505
+2026-10-07T18:54:49.321599787Z           MessageText: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.321606976Z           Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.321614348Z           SchemaName: audit_access
+2026-10-07T18:54:49.321620862Z           TableName: audit_records
+2026-10-07T18:54:49.321627564Z           ConstraintName: ux_audit_records_origem_fato_id
+2026-10-07T18:54:49.321634144Z           File: nbtinsert.c
+2026-10-07T18:54:49.321640573Z           Line: 666
+2026-10-07T18:54:49.321646816Z           Routine: _bt_check_unique
+2026-10-07T18:54:49.321653235Z          --- End of inner exception stack trace ---
+2026-10-07T18:54:49.321659916Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321676474Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321684825Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321691959Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321699108Z          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321705954Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321713131Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321721720Z          at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321729325Z          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321736287Z       Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+2026-10-07T18:54:49.321743431Z        ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.321750852Z       
+2026-10-07T18:54:49.321756944Z       DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.321764068Z          at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+2026-10-07T18:54:49.321771710Z          at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+2026-10-07T18:54:49.321803203Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321818002Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321825294Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321832232Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321839289Z          at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321855939Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321863790Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321872334Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321879586Z         Exception data:
+2026-10-07T18:54:49.321886048Z           Severity: ERROR
+2026-10-07T18:54:49.321892380Z           SqlState: 23505
+2026-10-07T18:54:49.321898635Z           MessageText: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.321905771Z           Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.321912827Z           SchemaName: audit_access
+2026-10-07T18:54:49.321919358Z           TableName: audit_records
+2026-10-07T18:54:49.321925845Z           ConstraintName: ux_audit_records_origem_fato_id
+2026-10-07T18:54:49.321932319Z           File: nbtinsert.c
+2026-10-07T18:54:49.321938597Z           Line: 666
+2026-10-07T18:54:49.321944807Z           Routine: _bt_check_unique
+2026-10-07T18:54:49.321951030Z          --- End of inner exception stack trace ---
+2026-10-07T18:54:49.321957490Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321964732Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321972331Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321979614Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321986795Z          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+2026-10-07T18:54:49.321993788Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+2026-10-07T18:54:49.322000794Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.322009138Z          at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2026-10-07T18:54:49.322025194Z          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.325687941Z info: CodeForCoders.Audit.Infra.Messaging.AuditEventConsumerWorker[0]
+2026-10-07T18:54:49.325723325Z       Administrative act recorded e786b693-671a-4e17-b117-88558bfbff26 identidade papel-concedido 11111111-1111-4111-8111-111111111111
+2026-10-07T18:54:49.393163527Z fail: Microsoft.EntityFrameworkCore.Database.Command[20102]
+2026-10-07T18:54:49.393192018Z       Failed executing DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?', @p3='?' (DbType = Object), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?' (DbType = Guid), @p9='?', @p10='?', @p11='?' (DbType = Guid), @p12='?' (DbType = DateTime), @p13='?', @p14='?' (DbType = Object), @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Guid), @p18='?', @p19='?' (DbType = Guid), @p20='?'], CommandType='Text', CommandTimeout='30']
+2026-10-07T18:54:49.393197066Z       INSERT INTO audit_access.audit_records (id, autor_id, autor_tipo, complemento, confirmation_id, confirmed_at, conformidade, explanation, fato_id, impressao_digital, origem, original_record_id, praticado_em, motivo, razoes, recebido_em, record_type, alvo_id, alvo_tipo, tenant_id, tipo)
+2026-10-07T18:54:49.393200237Z       VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2026-10-07T18:54:49.398401509Z fail: Microsoft.EntityFrameworkCore.Update[10000]
+2026-10-07T18:54:49.398430733Z       An exception occurred in the database while saving changes for context type 'CodeForCoders.Audit.Infra.Data.AuditDbContext'.
+2026-10-07T18:54:49.398437140Z       Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+2026-10-07T18:54:49.398441866Z        ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.398446380Z       
+2026-10-07T18:54:49.398449899Z       DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.398454105Z          at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+2026-10-07T18:54:49.398458455Z          at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+2026-10-07T18:54:49.398463121Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398467398Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398471573Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398475770Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398494494Z          at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398499666Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398503943Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398509654Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398514021Z         Exception data:
+2026-10-07T18:54:49.398517924Z           Severity: ERROR
+2026-10-07T18:54:49.398521723Z           SqlState: 23505
+2026-10-07T18:54:49.398525404Z           MessageText: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.398529631Z           Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.398534009Z           SchemaName: audit_access
+2026-10-07T18:54:49.398537945Z           TableName: audit_records
+2026-10-07T18:54:49.398541818Z           ConstraintName: ux_audit_records_origem_fato_id
+2026-10-07T18:54:49.398545715Z           File: nbtinsert.c
+2026-10-07T18:54:49.398549576Z           Line: 666
+2026-10-07T18:54:49.398553327Z           Routine: _bt_check_unique
+2026-10-07T18:54:49.398557186Z          --- End of inner exception stack trace ---
+2026-10-07T18:54:49.398561052Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398565451Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398570020Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398577177Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398581798Z          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398586225Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398590555Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398601938Z          at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398607155Z          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398611220Z       Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+2026-10-07T18:54:49.398615626Z        ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.398620113Z       
+2026-10-07T18:54:49.398623782Z       DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.398628134Z          at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+2026-10-07T18:54:49.398632641Z          at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+2026-10-07T18:54:49.398637385Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398641577Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398645717Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398650070Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398654342Z          at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398658510Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398663145Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398668706Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398673257Z         Exception data:
+2026-10-07T18:54:49.398677129Z           Severity: ERROR
+2026-10-07T18:54:49.398681096Z           SqlState: 23505
+2026-10-07T18:54:49.398685048Z           MessageText: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.398689472Z           Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.398699553Z           SchemaName: audit_access
+2026-10-07T18:54:49.398703779Z           TableName: audit_records
+2026-10-07T18:54:49.398707565Z           ConstraintName: ux_audit_records_origem_fato_id
+2026-10-07T18:54:49.398711146Z           File: nbtinsert.c
+2026-10-07T18:54:49.398714945Z           Line: 666
+2026-10-07T18:54:49.398718645Z           Routine: _bt_check_unique
+2026-10-07T18:54:49.398722479Z          --- End of inner exception stack trace ---
+2026-10-07T18:54:49.398726247Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398730645Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398735198Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398739578Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398744145Z          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398748607Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398753060Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398758237Z          at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2026-10-07T18:54:49.398763082Z          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.402393475Z warn: CodeForCoders.Audit.Application.UseCases.Audit.RecordAdministrativeAct.RecordAdministrativeAct[0]
+2026-10-07T18:54:49.402414120Z       Administrative act redelivery has different content identidade e9090064-27b2-4bf5-8da3-51bf8c282d4f a4a8e32594867cab19fba93bea87394bb583a8297ca06a7d9083874edf7fe643 0dd86cd05257f1179a4bedb428745efe00f10160d98b6ebf07e5fa0d223be8f1
+2026-10-07T18:54:49.402417776Z info: CodeForCoders.Audit.Infra.Messaging.AuditEventConsumerWorker[0]
+2026-10-07T18:54:49.402420319Z       Administrative act recorded e9090064-27b2-4bf5-8da3-51bf8c282d4f identidade papel-concedido 11111111-1111-4111-8111-111111111111
+2026-10-07T18:54:49.470274442Z fail: Microsoft.EntityFrameworkCore.Database.Command[20102]
+2026-10-07T18:54:49.470304565Z       Failed executing DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?', @p3='?' (DbType = Object), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?' (DbType = Guid), @p9='?', @p10='?', @p11='?' (DbType = Guid), @p12='?' (DbType = DateTime), @p13='?', @p14='?' (DbType = Object), @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Guid), @p18='?', @p19='?' (DbType = Guid), @p20='?'], CommandType='Text', CommandTimeout='30']
+2026-10-07T18:54:49.470325672Z       INSERT INTO audit_access.audit_records (id, autor_id, autor_tipo, complemento, confirmation_id, confirmed_at, conformidade, explanation, fato_id, impressao_digital, origem, original_record_id, praticado_em, motivo, razoes, recebido_em, record_type, alvo_id, alvo_tipo, tenant_id, tipo)
+2026-10-07T18:54:49.470332860Z       VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2026-10-07T18:54:49.474541173Z fail: Microsoft.EntityFrameworkCore.Update[10000]
+2026-10-07T18:54:49.474562713Z       An exception occurred in the database while saving changes for context type 'CodeForCoders.Audit.Infra.Data.AuditDbContext'.
+2026-10-07T18:54:49.474568954Z       Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+2026-10-07T18:54:49.474573730Z        ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.474579022Z       
+2026-10-07T18:54:49.474583077Z       DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.474587633Z          at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+2026-10-07T18:54:49.474592539Z          at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+2026-10-07T18:54:49.474600297Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474607448Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474615148Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474622872Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474627534Z          at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474631907Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474636460Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474642428Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474660673Z         Exception data:
+2026-10-07T18:54:49.474665183Z           Severity: ERROR
+2026-10-07T18:54:49.474669181Z           SqlState: 23505
+2026-10-07T18:54:49.474673219Z           MessageText: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.474677729Z           Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.474682836Z           SchemaName: audit_access
+2026-10-07T18:54:49.474689445Z           TableName: audit_records
+2026-10-07T18:54:49.474696874Z           ConstraintName: ux_audit_records_origem_fato_id
+2026-10-07T18:54:49.474704053Z           File: nbtinsert.c
+2026-10-07T18:54:49.474709391Z           Line: 666
+2026-10-07T18:54:49.474713228Z           Routine: _bt_check_unique
+2026-10-07T18:54:49.474717217Z          --- End of inner exception stack trace ---
+2026-10-07T18:54:49.474721350Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474725895Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474730439Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474734984Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474739483Z          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474743856Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474748292Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474753632Z          at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474758257Z          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474762653Z       Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+2026-10-07T18:54:49.474767802Z        ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.474798375Z       
+2026-10-07T18:54:49.474809573Z       DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.474814286Z          at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+2026-10-07T18:54:49.474818771Z          at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+2026-10-07T18:54:49.474823453Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474827766Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474832053Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474836334Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474840595Z          at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474844925Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474849393Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474855266Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474859928Z         Exception data:
+2026-10-07T18:54:49.474865175Z           Severity: ERROR
+2026-10-07T18:54:49.474871907Z           SqlState: 23505
+2026-10-07T18:54:49.474878892Z           MessageText: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.474886839Z           Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.474892013Z           SchemaName: audit_access
+2026-10-07T18:54:49.474896063Z           TableName: audit_records
+2026-10-07T18:54:49.474900026Z           ConstraintName: ux_audit_records_origem_fato_id
+2026-10-07T18:54:49.474904076Z           File: nbtinsert.c
+2026-10-07T18:54:49.474908019Z           Line: 666
+2026-10-07T18:54:49.474911868Z           Routine: _bt_check_unique
+2026-10-07T18:54:49.474915825Z          --- End of inner exception stack trace ---
+2026-10-07T18:54:49.474926115Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474930866Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474935399Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474939875Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474944400Z          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474951084Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474959168Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474967647Z          at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2026-10-07T18:54:49.474972570Z          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.478932516Z info: CodeForCoders.Audit.Infra.Messaging.AuditEventConsumerWorker[0]
+2026-10-07T18:54:49.478961820Z       Administrative act recorded 8c74f8c7-0a7d-4840-bc32-6f59a8e30cb7 identidade papel-concedido 11111111-1111-4111-8111-111111111111
+2026-10-07T18:54:49.578349014Z fail: Microsoft.EntityFrameworkCore.Database.Command[20102]
+2026-10-07T18:54:49.578401570Z       Failed executing DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?', @p3='?' (DbType = Object), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?' (DbType = Guid), @p9='?', @p10='?', @p11='?' (DbType = Guid), @p12='?' (DbType = DateTime), @p13='?', @p14='?' (DbType = Object), @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Guid), @p18='?', @p19='?' (DbType = Guid), @p20='?'], CommandType='Text', CommandTimeout='30']
+2026-10-07T18:54:49.578414424Z       INSERT INTO audit_access.audit_records (id, autor_id, autor_tipo, complemento, confirmation_id, confirmed_at, conformidade, explanation, fato_id, impressao_digital, origem, original_record_id, praticado_em, motivo, razoes, recebido_em, record_type, alvo_id, alvo_tipo, tenant_id, tipo)
+2026-10-07T18:54:49.578423761Z       VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2026-10-07T18:54:49.587420967Z fail: Microsoft.EntityFrameworkCore.Update[10000]
+2026-10-07T18:54:49.587462809Z       An exception occurred in the database while saving changes for context type 'CodeForCoders.Audit.Infra.Data.AuditDbContext'.
+2026-10-07T18:54:49.587516442Z       Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+2026-10-07T18:54:49.587527563Z        ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.587536653Z       
+2026-10-07T18:54:49.587543760Z       DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.587552039Z          at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+2026-10-07T18:54:49.587560017Z          at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+2026-10-07T18:54:49.587571243Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.587584469Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.587597824Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.587608163Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.587616101Z          at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.587623664Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.587631461Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.587642026Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.587649949Z         Exception data:
+2026-10-07T18:54:49.587657697Z           Severity: ERROR
+2026-10-07T18:54:49.587670065Z           SqlState: 23505
+2026-10-07T18:54:49.587682785Z           MessageText: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.587694802Z           Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.587702781Z           SchemaName: audit_access
+2026-10-07T18:54:49.587709747Z           TableName: audit_records
+2026-10-07T18:54:49.587716723Z           ConstraintName: ux_audit_records_origem_fato_id
+2026-10-07T18:54:49.587723829Z           File: nbtinsert.c
+2026-10-07T18:54:49.587730750Z           Line: 666
+2026-10-07T18:54:49.587752380Z           Routine: _bt_check_unique
+2026-10-07T18:54:49.587765816Z          --- End of inner exception stack trace ---
+2026-10-07T18:54:49.587813450Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.587833486Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.587845830Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.587859782Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.587873258Z          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+2026-10-07T18:54:49.587883987Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+2026-10-07T18:54:49.587891780Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.587901367Z          at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2026-10-07T18:54:49.587909426Z          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.587917094Z       Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+2026-10-07T18:54:49.587924631Z        ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.587934103Z       
+2026-10-07T18:54:49.587946225Z       DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.587960468Z          at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+2026-10-07T18:54:49.587971168Z          at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+2026-10-07T18:54:49.587979577Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.587987185Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.587994652Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.588015455Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.588025964Z          at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.588039440Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.588053487Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.588067314Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.588075317Z         Exception data:
+2026-10-07T18:54:49.588082203Z           Severity: ERROR
+2026-10-07T18:54:49.588089214Z           SqlState: 23505
+2026-10-07T18:54:49.588096120Z           MessageText: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.588103808Z           Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.588111571Z           SchemaName: audit_access
+2026-10-07T18:54:49.588121584Z           TableName: audit_records
+2026-10-07T18:54:49.588134238Z           ConstraintName: ux_audit_records_origem_fato_id
+2026-10-07T18:54:49.588147568Z           File: nbtinsert.c
+2026-10-07T18:54:49.588155016Z           Line: 666
+2026-10-07T18:54:49.588161801Z           Routine: _bt_check_unique
+2026-10-07T18:54:49.588168707Z          --- End of inner exception stack trace ---
+2026-10-07T18:54:49.588175708Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.588183436Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.588191319Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.588199152Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.588209245Z          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+2026-10-07T18:54:49.588223188Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+2026-10-07T18:54:49.588248350Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.588259756Z          at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2026-10-07T18:54:49.588267880Z          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.594239103Z info: CodeForCoders.Audit.Infra.Messaging.AuditEventConsumerWorker[0]
+2026-10-07T18:54:49.594300143Z       Administrative act recorded d0b9d42d-1663-47af-8a91-0c98fb67889f identidade papel-concedido 11111111-1111-4111-8111-111111111111
+2026-10-07T18:54:49.674206923Z fail: Microsoft.EntityFrameworkCore.Database.Command[20102]
+2026-10-07T18:54:49.674230496Z       Failed executing DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?', @p3='?' (DbType = Object), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?' (DbType = Guid), @p9='?', @p10='?', @p11='?' (DbType = Guid), @p12='?' (DbType = DateTime), @p13='?', @p14='?' (DbType = Object), @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Guid), @p18='?', @p19='?' (DbType = Guid), @p20='?'], CommandType='Text', CommandTimeout='30']
+2026-10-07T18:54:49.674235290Z       INSERT INTO audit_access.audit_records (id, autor_id, autor_tipo, complemento, confirmation_id, confirmed_at, conformidade, explanation, fato_id, impressao_digital, origem, original_record_id, praticado_em, motivo, razoes, recebido_em, record_type, alvo_id, alvo_tipo, tenant_id, tipo)
+2026-10-07T18:54:49.674238607Z       VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2026-10-07T18:54:49.679327777Z fail: Microsoft.EntityFrameworkCore.Update[10000]
+2026-10-07T18:54:49.679345529Z       An exception occurred in the database while saving changes for context type 'CodeForCoders.Audit.Infra.Data.AuditDbContext'.
+2026-10-07T18:54:49.679348907Z       Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+2026-10-07T18:54:49.679351610Z        ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.679354827Z       
+2026-10-07T18:54:49.679357188Z       DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.679359854Z          at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+2026-10-07T18:54:49.679362560Z          at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+2026-10-07T18:54:49.679365537Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679380140Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679382964Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679385473Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679387947Z          at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679390483Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679393082Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679396600Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679399273Z         Exception data:
+2026-10-07T18:54:49.679401590Z           Severity: ERROR
+2026-10-07T18:54:49.679403912Z           SqlState: 23505
+2026-10-07T18:54:49.679409139Z           MessageText: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.679411808Z           Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.679414412Z           SchemaName: audit_access
+2026-10-07T18:54:49.679416711Z           TableName: audit_records
+2026-10-07T18:54:49.679418980Z           ConstraintName: ux_audit_records_origem_fato_id
+2026-10-07T18:54:49.679421465Z           File: nbtinsert.c
+2026-10-07T18:54:49.679423779Z           Line: 666
+2026-10-07T18:54:49.679426019Z           Routine: _bt_check_unique
+2026-10-07T18:54:49.679428316Z          --- End of inner exception stack trace ---
+2026-10-07T18:54:49.679430695Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679433261Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679435845Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679438453Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679441094Z          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679446286Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679448962Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679451887Z          at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679454596Z          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679457256Z       Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+2026-10-07T18:54:49.679459885Z        ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.679462585Z       
+2026-10-07T18:54:49.679464834Z       DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.679467401Z          at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+2026-10-07T18:54:49.679470010Z          at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+2026-10-07T18:54:49.679472832Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679475308Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679477803Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679480288Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679482791Z          at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679485321Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679487923Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679490825Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679493419Z         Exception data:
+2026-10-07T18:54:49.679498056Z           Severity: ERROR
+2026-10-07T18:54:49.679500442Z           SqlState: 23505
+2026-10-07T18:54:49.679502714Z           MessageText: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.679505253Z           Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.679507791Z           SchemaName: audit_access
+2026-10-07T18:54:49.679510123Z           TableName: audit_records
+2026-10-07T18:54:49.679512425Z           ConstraintName: ux_audit_records_origem_fato_id
+2026-10-07T18:54:49.679514787Z           File: nbtinsert.c
+2026-10-07T18:54:49.679517105Z           Line: 666
+2026-10-07T18:54:49.679519339Z           Routine: _bt_check_unique
+2026-10-07T18:54:49.679521654Z          --- End of inner exception stack trace ---
+2026-10-07T18:54:49.679524053Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679526620Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679529247Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679531859Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679534485Z          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679537021Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679539569Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679542501Z          at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2026-10-07T18:54:49.679545180Z          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.683468586Z info: CodeForCoders.Audit.Infra.Messaging.AuditEventConsumerWorker[0]
+2026-10-07T18:54:49.683486033Z       Administrative act recorded 2eec9a78-7003-4e62-9225-961d1d92736c identidade papel-concedido 11111111-1111-4111-8111-111111111111
+2026-10-07T18:54:49.752305403Z fail: Microsoft.EntityFrameworkCore.Database.Command[20102]
+2026-10-07T18:54:49.752328862Z       Failed executing DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?', @p3='?' (DbType = Object), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?' (DbType = Guid), @p9='?', @p10='?', @p11='?' (DbType = Guid), @p12='?' (DbType = DateTime), @p13='?', @p14='?' (DbType = Object), @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Guid), @p18='?', @p19='?' (DbType = Guid), @p20='?'], CommandType='Text', CommandTimeout='30']
+2026-10-07T18:54:49.752345308Z       INSERT INTO audit_access.audit_records (id, autor_id, autor_tipo, complemento, confirmation_id, confirmed_at, conformidade, explanation, fato_id, impressao_digital, origem, original_record_id, praticado_em, motivo, razoes, recebido_em, record_type, alvo_id, alvo_tipo, tenant_id, tipo)
+2026-10-07T18:54:49.752348684Z       VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2026-10-07T18:54:49.755210016Z fail: Microsoft.EntityFrameworkCore.Update[10000]
+2026-10-07T18:54:49.755230779Z       An exception occurred in the database while saving changes for context type 'CodeForCoders.Audit.Infra.Data.AuditDbContext'.
+2026-10-07T18:54:49.755235954Z       Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+2026-10-07T18:54:49.755244052Z        ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.755249322Z       
+2026-10-07T18:54:49.755253214Z       DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.755257599Z          at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+2026-10-07T18:54:49.755262188Z          at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+2026-10-07T18:54:49.755267051Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755271309Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755275589Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755279832Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755284185Z          at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755288582Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755293196Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755298955Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755315394Z         Exception data:
+2026-10-07T18:54:49.755320256Z           Severity: ERROR
+2026-10-07T18:54:49.755324205Z           SqlState: 23505
+2026-10-07T18:54:49.755328021Z           MessageText: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.755332353Z           Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.755336739Z           SchemaName: audit_access
+2026-10-07T18:54:49.755340604Z           TableName: audit_records
+2026-10-07T18:54:49.755344358Z           ConstraintName: ux_audit_records_origem_fato_id
+2026-10-07T18:54:49.755348284Z           File: nbtinsert.c
+2026-10-07T18:54:49.755352106Z           Line: 666
+2026-10-07T18:54:49.755355791Z           Routine: _bt_check_unique
+2026-10-07T18:54:49.755359726Z          --- End of inner exception stack trace ---
+2026-10-07T18:54:49.755363665Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755368059Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755372524Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755376855Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755381334Z          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755385581Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755389914Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755394943Z          at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755399392Z          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755403600Z       Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+2026-10-07T18:54:49.755407996Z        ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.755418697Z       
+2026-10-07T18:54:49.755423095Z       DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.755427376Z          at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+2026-10-07T18:54:49.755431745Z          at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+2026-10-07T18:54:49.755436354Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755440496Z          at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755444658Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755448731Z          at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755452840Z          at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755457083Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755461442Z          at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755466389Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755470644Z         Exception data:
+2026-10-07T18:54:49.755474348Z           Severity: ERROR
+2026-10-07T18:54:49.755478279Z           SqlState: 23505
+2026-10-07T18:54:49.755482142Z           MessageText: duplicate key value violates unique constraint "ux_audit_records_origem_fato_id"
+2026-10-07T18:54:49.755486450Z           Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2026-10-07T18:54:49.755490785Z           SchemaName: audit_access
+2026-10-07T18:54:49.755494840Z           TableName: audit_records
+2026-10-07T18:54:49.755498882Z           ConstraintName: ux_audit_records_origem_fato_id
+2026-10-07T18:54:49.755502843Z           File: nbtinsert.c
+2026-10-07T18:54:49.755506704Z           Line: 666
+2026-10-07T18:54:49.755510675Z           Routine: _bt_check_unique
+2026-10-07T18:54:49.755514513Z          --- End of inner exception stack trace ---
+2026-10-07T18:54:49.755523867Z          at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755528924Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755533533Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755538039Z          at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755542496Z          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755546925Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755551261Z          at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755556287Z          at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2026-10-07T18:54:49.755560936Z          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-10-07T18:54:49.758131368Z info: CodeForCoders.Audit.Infra.Messaging.AuditEventConsumerWorker[0]
+2026-10-07T18:54:49.758146608Z       Administrative act recorded 8018c059-16ef-4fca-85ed-3041de9371e9 identidade papel-concedido 11111111-1111-4111-8111-111111111111

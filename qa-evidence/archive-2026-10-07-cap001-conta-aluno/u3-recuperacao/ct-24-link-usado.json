@@ -1,0 +1,1 @@
+{"type":"https://tools.ietf.org/html/rfc4918#section-11.2","title":"The reset link or new password is invalid.","status":422,"code":"PASSWORD_RESET_REJECTED","traceId":"b239ee57b5bad48def31ecae48a2c5a2"}
