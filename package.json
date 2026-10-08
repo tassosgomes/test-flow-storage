@@ -6,7 +6,6 @@
     "packages/*"
   ],
   "scripts": {
-    "prepare": "npm run build -w @tfs/schema && npm run build -w @tfs/cli",
     "dev": "npm run dev -w @tfs/web",
     "build": "npm run build -w @tfs/schema && npm run build -w @tfs/cli && npm run build -w @tfs/web",
     "test": "vitest run",

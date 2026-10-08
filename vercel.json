@@ -3,5 +3,5 @@
   "installCommand": "npm install",
   "buildCommand": "npm run build -w @tfs/web",
   "framework": "nextjs",
-  "outputDirectory": "apps/web/.next"
+  "outputDirectory": ".next"
 }

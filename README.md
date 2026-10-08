@@ -14,13 +14,21 @@ npm run db:push
 npm run dev
 ```
 
+O `dev` e o `build` do web compilam `@tfs/schema` antes de rodar (`predev` e `prebuild`). O `npm install` não compila nada.
+
 Na conta, crie um projeto e uma API key. A CLI usa essa chave:
 
 ```bash
+npm run build -w @tfs/schema
+npm run build -w @tfs/cli
 export TFS_API_URL=http://localhost:3000
 export TFS_API_KEY=tfs_...
 npx tfs project list
 npx tfs push qa-evidence --project <slug>
 ```
 
-O deploy na Vercel usa o `vercel.json` da raiz. O app Next está em `apps/web`.
+## CLI
+
+A CLI não vai para a Vercel. O workflow `.github/workflows/cli.yml` roda build e testes em PRs e pushes para `main`. Para publicar, crie uma tag `cli-v<versão>` que bata com `packages/cli/package.json`. O workflow gera `tfs-<versão>.js` com o `sha256` e cria um GitHub Release com os dois arquivos.
+
+O deploy na Vercel é do app Next em `apps/web`, com Root Directory `apps/web`.
