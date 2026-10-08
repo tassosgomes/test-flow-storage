@@ -1,4 +1,5 @@
 import { logout } from "@/server/actions";
+import { Logo } from "./logo";
 
 export function Header({
   email,
@@ -8,21 +9,24 @@ export function Header({
   crumb?: string;
 }) {
   return (
-    <header className="topbar">
-      <a className="brand" href="/projects">
-        test-flow
-      </a>
-      {crumb ? <span className="crumb">{crumb}</span> : <span className="crumb">Projetos</span>}
-      <span className="spacer" />
-      <span className="who">{email}</span>
-      <a className="nav" href="/settings/api-keys">
-        Keys
-      </a>
-      <form action={logout}>
-        <button className="linkish" type="submit">
-          Sair
-        </button>
-      </form>
+    <header className="topnav">
+      <Logo />
+      <span className="crumb-sep">/</span>
+      <span className="crumb">{crumb ?? "Projetos"}</span>
+      <div className="topnav-actions">
+        <span className="topnav-email">{email}</span>
+        <a className="nav" href="/settings/api-keys">
+          API keys
+        </a>
+        <form action={logout}>
+          <button className="linkish" type="submit">
+            Sair
+          </button>
+        </form>
+        <span className="avatar" aria-hidden>
+          {email.charAt(0).toUpperCase() || "?"}
+        </span>
+      </div>
     </header>
   );
 }

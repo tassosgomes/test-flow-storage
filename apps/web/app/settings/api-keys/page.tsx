@@ -6,10 +6,13 @@ export default async function ApiKeysPage() {
   const user = await requireUser();
   const keys = await listApiKeys(user.id);
   return (
-    <div className="shell">
+    <div className="stack">
       <Header email={user.email} crumb="API keys" />
-      <main className="page">
-        <h1>API keys</h1>
+      <main className="page narrow">
+        <div className="page-head-text">
+          <h1 className="page-title">API keys</h1>
+          <p className="page-sub">A CLI usa TFS_API_KEY. O segredo aparece uma vez.</p>
+        </div>
         <ApiKeys
           keys={keys.map((key) => ({
             id: key.id,

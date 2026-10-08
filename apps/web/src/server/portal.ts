@@ -2,7 +2,7 @@ import { randomUUID } from "node:crypto";
 import { and, desc, eq, sql } from "drizzle-orm";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
-import { slugify } from "@tfs/schema";
+import { resultLabel, slugify } from "@tfs/schema";
 import { getDb } from "../db";
 import { apiKey, artifact, project, qaSession } from "../db/schema";
 import { getAuth } from "../lib/auth";
@@ -26,15 +26,23 @@ export async function listProjects(userId: string) {
     .from(project)
     .where(eq(project.userId, userId))
     .orderBy(desc(project.createdAt));
-  return Promise.all(
+  const items = await Promise.all(
     rows.map(async (item) => {
-      const [count] = await db
-        .select({ value: sql<number>`count(*)::int` })
+      const sessions = await db
+        .select({ result: qaSession.result, startedAt: qaSession.startedAt, updatedAt: qaSession.updatedAt })
         .from(qaSession)
-        .where(eq(qaSession.projectId, item.id));
-      return { ...item, sessionCount: count?.value ?? 0 };
+        .where(eq(qaSession.projectId, item.id))
+        .orderBy(desc(qaSession.updatedAt));
+      return {
+        ...item,
+        sessionCount: sessions.length,
+        recentVerdicts: sessions.slice(0, 3).map((round) => resultLabel(round.result?.overall)),
+        lastStartedAt: sessions[0]?.startedAt ?? null,
+        lastActivity: sessions[0]?.updatedAt ?? item.createdAt,
+      };
     }),
   );
+  return items.sort((a, b) => new Date(b.lastActivity).getTime() - new Date(a.lastActivity).getTime());
 }
 
 export async function createProjectForUser(userId: string, name: string, requestedSlug?: string) {
